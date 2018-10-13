@@ -3,32 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>Step-Forkio</title>
-    <link rel="stylesheet" href="scss/style320.scss">
+    <link rel="stylesheet" href="css/main.css">  <!--так не работает-->
 </head>
 <body>
-   <header class="header">
-   <div class="container">
-   <a href="#" class="header__logo-link"><img src="" alt="" class="header__logo"></a>
-   <a href="#" class="header__title">forkio</a>
-   <div class="header__menu-block">
-   <ul class="header__menu">
-       <li class="header__menu-item"><a href="" class="header__item-link">Overview</a></li>
-       <li class="header__menu-item"><a href="" class="header__item-link">About Fork</a></li>
-       <li class="header__menu-item"><a href="" class="header__item-link">Buying Options</a></li>
-       <li class="header__menu-item"><a href="" class="header__item-link">Support</a></li>
-       <li class="header__menu-item"><a href="" class="header__item-link">Buy now</a></li>
-   </ul>
-   </div>
-   </div>
-   </header>
-   
-   <section class="title-section">
-       <div class="container">
-       <h2 class="title-section__main-title">Fork App</h2>
-       <p class="title-section__slogan">A real gamechanger in the world of web development</p>
-       <p class="title-section__slogan-sub">v.2.8 for mac and windows</p>
-       </div>
-   </section>
+<nav class="navbar">
+    <div class="container">
+        <a href="" class="navbar__logo">
+            <div class="navbar__logo-img">
+                <img src="" alt="">
+            </div>
+            <span class="navbar__logo-title">forkio</span>
+        </a>
+        <div class="navbar__toggle-navbar">
+            <div class="navbar__toggle-navbar-line navbar__toggle-navbar-line_short"></div>
+            <div class="navbar__toggle-navbar-line"></div>
+            <div class="navbar__toggle-navbar-line"></div>
+        </div>
+
+        <div class="navbar__menu-block">
+            <ul class="navbar__menu">
+                <li class="navbar__menu-item navbar__menu-item_home"><a href="" class="navbar__item-link navbar__item-link_home">Home</a></li>
+                <li class="navbar__menu-item"><a href="" class="navbar__menu-link">Overview</a></li>
+                <li class="navbar__menu-item"><a href="" class="navbar__menu-link">About Fork</a></li>
+                <li class="navbar__menu-item"><a href="" class="navbar__menu-link">Buying Options</a></li>
+                <li class="navbar__menu-item"><a href="" class="navbar__menu-link">Support</a></li>
+            </ul>
+            <a href="" class="navbar__buy-btn">Buy now</a>
+        </div>
+    </div>
+</nav>
+
+<header class="header">
+    <div class="container">
+        <h2 class="header__main-title">Fork App</h2>
+        <p class="header__slogan">A real gamechanger in the world of web development</p>
+        <p class="header__slogan-sub">v.2.8 for mac and windows</p>
+    </div>
+</header>
    
    <section class="editor">
        <div class="container">
