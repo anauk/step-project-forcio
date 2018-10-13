@@ -1,0 +1,43 @@
+@import 'reset';
+@import 'variables';
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1200px;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  overflow: hidden;
+}
+
+.logo {
+  @include flex-center;
+  &__img {
+
+  }
+  &__title {
+    margin-left: 18px;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+}
+
+@include btn;
+.btn_pink {
+  background-color: $bcg-purple;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.btn_grey {
+  background-color: #806d7a;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+@import 'navbar/navbar';
