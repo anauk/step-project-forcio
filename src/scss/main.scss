@@ -1,0 +1,19 @@
+@import 'reset';
+@import 'slick';
+@import 'slick-theme';
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 23px;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+@import 'footer/footer';
+

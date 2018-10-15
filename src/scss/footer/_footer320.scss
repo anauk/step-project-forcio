@@ -1,0 +1,22 @@
+@media (min-width: 320px) {
+.footer__flex-blok{
+    flex-direction: column;
+    
+}
+
+.footer__title-text {
+    color: #323232;
+    font-size: em(16px);
+    margin-bottom: 20px;
+}
+
+.footer__text {
+    color: #848e97;
+    font-size: em(14px);
+}
+
+.footer__contact {
+    color: #31384d;
+    font-size: em(30px);
+}
+}

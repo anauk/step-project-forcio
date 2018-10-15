@@ -2,8 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Step-Forkio</title>
-    <link rel="stylesheet" href="css/main.css">  <!--так не работает-->
+    <link rel="stylesheet" href="css/main.css">
+     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i|Montserrat:300,300i,400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> --> 
 </head>
 <body>
 <nav class="navbar">
@@ -48,23 +54,131 @@
        </div>
    </section>
    
-   <section class="stiven">
+   <section class="propositions">
        <div class="container">
-           <h6>Steven Strange</h6>
-           <a href="">@DoctorS</a>
-           <a href="">@Pixelbuddha Suspendisse sodales sem est_ in scelerisque felis</a>
+           <h2 class="propositions__heading">&lt;Here is what you get&gt;</h2>
+           <div class="propositions__boxes">
+               <div class="propositions__box">
+                      <img src="" alt="">
+                       <h3 class="propositions__box-heading">Creatred to Make The Web Better</h3>
+                        <p class="propositions__description">Aenean cursus imperdiet nisl id fermentum. Curabitur dapibus iaculis mi gravida luctus.Aliquam erat volutpat.</p>
+                   </div>
+                    <div class="propositions__box">
+                      <img src="" alt="">
+                       <h3 class="propositions__box-heading">Incredibly Powerful Tool</h3>
+                        <p class="propositions__description">Maecenas eu dictum felis, a dignissim nibh. Curabitur dapibus iaculis mi gravida luctus.Aliquam erat volutpat.</p>
+                   </div>
+                    <div class="propositions__box">
+                      <img src="" alt="">
+                       <h3 class="propositions__box-heading">Experimental Stuff</h3>
+                        <p class="propositions__description">Maecenas eu dictum felis, a dignissim nibh. Curabitur dapibus iaculis mi gravida luctus.Aliquam erat volutpat.</p>
+                   </div>
+                   <div class="propositions__box">
+                      <img src="" alt="">
+                       <h3 class="propositions__box-heading">Creatred to Make The Web Better</h3>
+                        <p class="propositions__description">Maecenas eu dictum felis_ a dignissim nibh. Maecenas eu dictum felis_ a dignissim nibh. Curabitur dapibus iaculis mi gravida luctus.Aliquam erat volutpat.</p>
+                   </div>
+           </div>
+           <div class="propositions__img"><img src="" alt=""></div>
+       </div>
+   </section>
+   
+   <section class="reviews">
+       <div class="container">
+          <div class="reviews__reviews-box">        
+          <div class="reviews__review-item">
+           <div class="reviews__review-author-image"><img src="./img/reviews/review-big.jpg" alt=""></div>
+           <div class="reviews__review-author">Steven Strange</div>
+              <div class="reviews__review-author-position"><a href="">@DoctorS</a></div>  
+           <p href="">@Pixelbuddha Suspendisse sodales sem est_ in scelerisque felis</p>
            <p>2 hours ago</p>
-           <div>
-           <a href="">GitHub</a>
-           <a href="">Twitter</a>
-           <a href="">Facebook</a>
+           </div>
+           
+            <div class="reviews__review-item">
+           <div class="reviews__review-author-image"><img src="./img/reviews/review-big.jpg" alt=""></div>
+           <div class="reviews__review-author">Steven Strange</div>
+              <div class="reviews__review-author-position"><a href="">@DoctorS</a></div>  
+           <p href="">@Pixelbuddha Suspendisse sodales sem est_ in scelerisque felis</p>
+           <p>2 hours ago</p>
+           </div>
+           
+            <div class="reviews__review-item">
+           <div class="reviews__review-author-image"><img src="./img/reviews/review-big.jpg" alt=""></div>
+           <div class="reviews__review-author">Steven Strange</div>
+              <div class="reviews__review-author-position"><a href="">@DoctorS</a></div>  
+           <p href="">@Pixelbuddha Suspendisse sodales sem est_ in scelerisque felis</p>
+           <p>2 hours ago</p>
+           </div> 
+           </div>
+           <div class="reviews__carousel-nav">
+                <div class="reviews__prev-slide"></div>
+                <div class="reviews__dots"></div>
+                <div class="reviews__next-slide"></div>
+            </div>
+           
+           <div class="reviews__social-btns">
+           <a class="button reviews__social-btn github-btn" href="#">GitHub</a>
+               <span class="reviews__details">7 352 Followers</span>
+           <a class="button reviews__social-btn twitter-btn" href="#">Twitter</a>
+           <span class="reviews__details">136 312 Followers</span>
+           <a class="button reviews__social-btn facebook-btn" href="#">Facebook</a>
+           <span class="reviews__details">218 092 Subscribers</span>
            </div>
        </div>
    </section>
    
-   <section class="propositions">
-       <div class="container"></div>
+   <section class="modal">
+       <div class="container">
+           <h3 class="modal__form-heading">Order callback</h3>
+            <h3 class="modal__form-heading">Subscribe To Stay In Touch</h3>       
+       <form class="modal__form">
+           <label for="email" class="modal__email-input">
+                        <input type="email" id="email" name="email" placeholder="Your name">
+                    </label>
+                    <label for="phone" class="modal__phone-input">
+                        <input type="phone" id="phone" name="phone" placeholder="Your Phone">
+                    </label>
+                    <input type="submit" value="call me!" class="modal__submit-input">
+       </form>
+        </div>
    </section>
+   
+   <footer class="footer">
+       <div class="container">
+           <div class="footer__flex-blok">
+               <div class="footer__logo-box">
+                  <a href="" class="logo footer__logo">
+                  <div class="logo__img"><img src="./img/Logo-main.png" alt=""></div>
+                    <span class="logo__title navbar__logo-title">Fork<span>IO</span></span></a>
+               <p class="footer__text">Lorem ipsum dolor sit amet_ feugiat delicat liberavisse id cum</p>
+               </div>
+               
+               <div class="footer__nav">    
+                  <h6 class="footer__title-text">Navigation</h6>
+                   <ul>
+                       <li class="footer__item"><a class="footer__text " href="#">Home</a></li>
+                       <li class="footer__item"><a class="footer__text" href="#">Overview</a></li>
+                       <li class="footer__item"><a class="footer__text" href="#">About</a></li>
+                       <li class="footer__item"><a class="footer__text" href="#">Buying Options</a></li>
+                       <li class="footer__item"><a class="footer__text" href="#">Support</a></li>
+                   </ul>
+               </div>
+               
+               <div class="footer__contacts">
+                   <a class="footer__contact" href="">347 567 78 90</a>
+                   <p class="footer__text">AVAILABLE FROM 12PM - 18PM</p>
+                   <h6 class="footer__title-text">New York_ NY</h6>
+                   <p class="footer__text">560 Judah St & 15th Ave_ Apt 5</p>
+                   <p class="footer__text">San Francisco_ CA_ 230903</p>
+               </div>
+               
+               <div class="footer__info">
+                   <h6 class="footer__title-text">Info</h6>
+                   <p class="footer__text">Wisi enim ad minim veniam_ quis nostrud exerci tation uliamcorper suscipit lobortis nisl ut aliquip ex commodo consequat. Autern vel hendrerit iriure dolor in hendrerit</p>
+               </div>
+           </div>
+       </div>
+   </footer>
     <script src=""></script>
 </body>
 </html>
