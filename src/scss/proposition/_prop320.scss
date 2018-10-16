@@ -1,0 +1,29 @@
+@media (min-width: 0px) {
+    .propositions {
+        padding-top: 34px;
+        padding-bottom: 6px;
+        background: #f4f4f4;
+    }
+    .propositions__boxes {
+        display: flex;
+        
+    }
+    .propositions__heading {
+        color: #8d81ac;
+        font-size: 32px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .propositions__box-heading {
+        color: #323232;
+        margin-top: 23px;
+        margin-bottom: 16px;
+    }
+    .propositions__description {
+        font-family: 'Lato', sans-serif;
+        color: #848e97;
+        font-size: 14px;
+        text-align: center;
+    }
+    
+}

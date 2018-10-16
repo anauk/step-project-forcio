@@ -1,0 +1,41 @@
+@media (min-width: 0px) {
+    .reviews {
+        padding-top: 63px;
+        padding-bottom: 70px;
+    }
+    .reviews__review-author {
+    margin-bottom: 7px;
+    color: #474747;
+font-size: 24px;
+font-weight: 700;
+    }
+    .reviews__review-author-position {
+        margin-bottom: 23px;
+        color: #8d81ac;
+        font-size: 16px;
+        
+    }
+    .reviews__social-btn {
+        display: inline-block;
+        padding: 15px 0px 15px 24px;
+        border-radius: 4px;
+        width: 280px;
+        height: 50px;
+        font-size: 21px;
+        text-align: center;
+        
+    }
+    .github-btn {
+        background-color: #26a6d1;
+        color: #000000;
+    }
+    .twitter-btn {
+     background-color: #26a6d1;
+        color: #ffffff;
+    }
+    .facebook-btn {
+    background-color: #3b5998;
+        color: #ffffff;
+    }
+    
+}

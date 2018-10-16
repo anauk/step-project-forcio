@@ -5,6 +5,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     line-height: 23px;
+    font-size: 16px;
 }
 .container {
     width: 100%;
@@ -15,5 +16,8 @@ body {
     padding-right: 10px;
     
 }
+@import 'proposition/prop';
+@import './rewievs/rewievs320';
 @import 'footer/footer';
+
 

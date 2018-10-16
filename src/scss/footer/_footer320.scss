@@ -1,9 +1,17 @@
-@media (min-width: 320px) {
-.footer__flex-blok{
-    flex-direction: column;
+@media (min-width: 0px) {
+    .footer {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+.footer__flex-blok {
+    display: flex;
+    padding: 0px 29px 0px 26px;
     
 }
-
+    .footer__contact {
+        margin-top: 37px;
+        margin-bottom: 15px;
+    }
 .footer__title-text {
     color: #323232;
     font-size: em(16px);
@@ -13,6 +21,7 @@
 .footer__text {
     color: #848e97;
     font-size: em(14px);
+    margin-bottom: 37px;
 }
 
 .footer__contact {
