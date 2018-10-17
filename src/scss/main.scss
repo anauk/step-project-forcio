@@ -10,9 +10,10 @@ body {
   min-width: 320px;
   max-width: 1200px;
   width: 100%;
+  box-sizing: border-box;
   padding-left: 10px;
   padding-right: 10px;
-  overflow: hidden;
+  //overflow-x: hidden;
 }
 
 .logo {
