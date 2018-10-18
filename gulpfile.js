@@ -13,8 +13,9 @@ var sourcemaps = require('gulp-sourcemaps');
 var jsminify = require('gulp-js-minify');
 var autoprefixer = require('gulp-autoprefixer');
 var cleanCSS = require('gulp-clean-css');
+var runSequence = require('run-sequence');
 
-gulp.task('lint', () => {
+gulp.task('lint', function() {
     gulp.src(['**/*.js','!node_modules/!**'])
         .pipe(eslint({
             rules: {
@@ -47,7 +48,7 @@ gulp.task('minify', function(){
     return gulp.src('./src/js/*.js')
         .pipe(concat('bundle.js'))
         .pipe(gulp.dest('./build'))
-        .pipe(minify())
+        .pipe(jsminify())
         .pipe(rename('bundle.min.js'))
         .pipe(gulp.dest('./build'))
 })
@@ -57,15 +58,21 @@ gulp.task('clean', function(){
         .pipe(clean())
 })
 
-gulp.task('serve', ['clean'], function (){
+gulp.task('serve', function (){
+    /*runSequence('clean', ['sass'], function(){
+        browserSync.init({
+            server: "./build/"
+        })
+    })*/
     browserSync.init({
         server: "./build/"
     })
+
     gulp.src('./src/index.html').pipe(gulp.dest('./build/'));
-    gulp.watch('./src/scss/*.scss',['sass']).on('change', browserSync.reload);
+    gulp.watch('./src/scss/**/*.scss',['sass']).on('change', browserSync.reload);
     gulp.watch('./src/js/*.js',['minify']).on('change', browserSync.reload);
     gulp.watch('./src/index.html').on('change', function(){
-        gulp.src('./src/index.html').pipe(gulp.dest('./build/'))
+       return gulp.src('./src/index.html').pipe(gulp.dest('./build'))
     });
     gulp.watch('./build/index.html').on('change', browserSync.reload);
 
@@ -98,6 +105,12 @@ gulp.task('img', function(){
         .pipe(gulp.dest('./build/img'))
 })
 
-gulp.task('default', ['serve', 'lint'], function(){
+gulp.task('build', function() {
+    runSequence('clean',
+        ['lint', 'img', 'sass', 'minify'],
+        'serve');
+});
+
+gulp.task('default', ['build'], function(){
     console.log('=== ALL DONE ===')
 })
