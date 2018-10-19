@@ -41,6 +41,7 @@
   &__menu {
     width: 100vw;
     position: absolute;
+    z-index: 1;
     right: -100vw;
     top: 100%;
     transition: all 0.4s linear;

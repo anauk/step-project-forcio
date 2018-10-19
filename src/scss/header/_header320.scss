@@ -1,0 +1,45 @@
+.header {
+  padding-top: 43px;
+  padding-bottom: 424px;
+  background: url("../img/header-bg.jpg") center no-repeat;
+  text-align: center;
+  position: relative;
+
+  &__title {
+    margin-bottom: 12px;
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+  &__slogan {
+    margin-bottom: 12px;
+    color: $text-purple;
+    font-size: 18px;
+    line-height: 2;
+    text-transform: capitalize;
+    &-sub {
+      font-size: 14px;
+      text-transform: uppercase;
+      color: $footer-text-color;
+    }
+  }
+  &__btn {
+    width: 290px;
+    padding: 15px 0;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    &::after {
+      content: 'Unlimited 30-Days Trial Period';
+      position: absolute;
+      top: calc(100% + 12px);
+      font-weight: 400;
+      font-size: 14px;
+      color: $footer-text-color;
+      text-transform: capitalize;
+    }
+  }
+}
