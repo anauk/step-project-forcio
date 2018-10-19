@@ -3,7 +3,6 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  overflow-x: hidden;
 }
 
 .container {
@@ -14,7 +13,6 @@ body {
   box-sizing: border-box;
   padding-left: 10px;
   padding-right: 10px;
-
 }
 
 .logo {
@@ -32,21 +30,27 @@ body {
   }
 }
 
-@include btn;
-.btn_pink {
-  background-color: $bcg-purple;
-  text-transform: capitalize;
-  font-weight: 700;
-}
-.btn_pink:hover {
-  border: 1px solid $text-purple;
-  color: $text-purple;
-  background-color: #fff;
-}
-.btn_grey {
-  background-color: #806d7a;
-  text-transform: uppercase;
-  font-weight: 400;
+.btn {
+  @include flex-center;
+  border-radius: 50vh;
+  box-sizing: border-box;
+  color: #fff;
+  transition: 0.3s;
+  &_pink {
+    background-color: $bcg-purple;
+    text-transform: capitalize;
+    font-weight: 700;
+    &:hover {
+      border: 1px solid $text-purple;
+      color: $text-purple;
+      background-color: #fff;
+    }
+  }
+  &_grey {
+    background-color: #806d7a;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
 }
 
 @import 'navbar/navbar';

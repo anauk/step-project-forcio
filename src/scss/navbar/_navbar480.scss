@@ -1,0 +1,18 @@
+.navbar{
+  &__logo{
+    color: $text-purple;
+    &-title {
+      display: inline-block;
+    }
+    &:hover .logo__title{
+      color: #fff;
+    }
+  }
+  &__buy-btn {
+    padding: 3.16vw 25px;
+    font-size: 17px;
+  }
+}
+
+
+

@@ -8,6 +8,7 @@ $footer-header-color: #323232;
   justify-content: center;
   align-items: center;
 }
+
 @mixin flex-space {
   display: flex;
   justify-content: space-between;
@@ -15,6 +16,7 @@ $footer-header-color: #323232;
   flex-wrap: wrap;
 }
 
+/*
 @mixin btn {
   .btn {
     @include flex-center;
@@ -23,6 +25,6 @@ $footer-header-color: #323232;
     color: #fff;
     transition: 0.3s;
   }
-}
+}*/
 
 //можно еще сделать @mixin для кнопок социальных сетей под каруселью
