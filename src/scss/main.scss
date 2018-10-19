@@ -3,6 +3,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
@@ -13,13 +14,16 @@ body {
   box-sizing: border-box;
   padding-left: 10px;
   padding-right: 10px;
-  //overflow-x: hidden;
+
 }
 
 .logo {
   @include flex-center;
   &__img {
-
+    width: 43px;
+    height: 41px;
+    background-image: url("../img/Logo-main-sprite.png");
+    background-position: 0 0;
   }
   &__title {
     margin-left: 18px;
@@ -34,7 +38,11 @@ body {
   text-transform: capitalize;
   font-weight: 700;
 }
-
+.btn_pink:hover {
+  border: 1px solid $text-purple;
+  color: $text-purple;
+  background-color: #fff;
+}
 .btn_grey {
   background-color: #806d7a;
   text-transform: uppercase;

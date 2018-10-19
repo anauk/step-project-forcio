@@ -9,11 +9,13 @@
 .navbar__flex-wrapper {
   @include flex-space;
 }
+.navbar__logo:hover .logo__img{
+  background-position: 43px 0;
+}
 .navbar__logo-title {
   display: none;
 }
 .navbar__menu-block {
-  //position: relative;
   order: 2;
 }
 .navbar__toggle-navbar {

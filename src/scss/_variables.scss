@@ -1,5 +1,7 @@
 $bcg-purple: #8e82ad;
 $text-purple: #8d81ac;
+$footer-text-color: #848e97;
+$footer-header-color: #323232;
 
 @mixin flex-center {
   display: flex;
@@ -17,7 +19,9 @@ $text-purple: #8d81ac;
   .btn {
     @include flex-center;
     border-radius:  50vh;
+    box-sizing: border-box;
     color: #fff;
+    transition: 0.3s;
   }
 }
 
