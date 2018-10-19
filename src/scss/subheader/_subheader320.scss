@@ -1,0 +1,20 @@
+.subheader {
+  padding-top: 121px;
+  padding-bottom: 88px;
+  text-align: center;
+  &__title {
+    margin-bottom: 14px;
+    color:  #635c73;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-transform: uppercase;
+  }
+  &__slogan {
+    margin-bottom: 35px;
+    font-family: Lato, sans-serif;
+    color:  $footer-header-color;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
