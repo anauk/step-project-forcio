@@ -72,7 +72,7 @@ gulp.task('serve', function (){
     gulp.watch('./src/scss/**/*.scss',['sass']).on('change', browserSync.reload);
     gulp.watch('./src/js/*.js',['minify']).on('change', browserSync.reload);
     gulp.watch('./src/index.html').on('change', function(){
-        return gulp.src('./src/index.html').pipe(gulp.dest('./build'));
+       return gulp.src('./src/index.html').pipe(gulp.dest('./build'))
     });
     gulp.watch('./src/index.html').on('change', browserSync.reload);
 

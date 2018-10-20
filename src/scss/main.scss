@@ -1,6 +1,7 @@
 @import 'reset';
 @import 'variables';
 
+
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -18,17 +19,20 @@ body {
 .logo {
   @include flex-center;
   &__img {
+
     width: 43px;
     height: 41px;
     background-image: url("../img/Logo-main-sprite.png");
     background-position: 0 0;
   }
+  
   &__title {
     margin-left: 18px;
     font-size: 24px;
     text-transform: uppercase;
   }
 }
+
 
 .btn {
   @include flex-center;
@@ -56,3 +60,10 @@ body {
 @import 'navbar/navbar';
 @import 'header/header';
 @import 'subheader/subheader';
+@import 'proposition/prop';
+@import 'rewievs/rewievs';
+@import 'callback/callback';
+@import 'footer/footer';
+
+
+

@@ -1,0 +1,31 @@
+/*@media (min-width: 993px) {
+    
+}*/
+
+.footer {
+    padding-top: 4.9vw;
+    padding-bottom: 59px;
+    text-align: left;
+}
+
+.footer__flex-blok {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo-box {
+    flex: 25%;
+}
+
+.footer-nav {
+    flex: 20%;
+}
+
+.contacts {
+    flex: 30%;
+}
+
+.info {
+    flex: 25%;
+}

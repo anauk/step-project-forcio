@@ -1,0 +1,19 @@
+.propositions__box {
+    @include flex-space;
+    
+}
+.propositions__heading {
+    text-align: left;
+}
+.propositions__contecst-heading {
+    text-align: left;
+}
+.propositions__contecst-description {
+    text-align: left;
+}
+.propositions__icon {
+    flex: 20%;
+}
+.propositions__contecst {
+    flex: 80%;
+}
