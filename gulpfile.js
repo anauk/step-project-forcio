@@ -74,7 +74,7 @@ gulp.task('serve', function (){
     gulp.watch('./src/index.html').on('change', function(){
        return gulp.src('./src/index.html').pipe(gulp.dest('./build'))
     });
-    gulp.watch('./build/index.html').on('change', browserSync.reload);
+    gulp.watch('./src/index.html').on('change', browserSync.reload);
 
 })
 

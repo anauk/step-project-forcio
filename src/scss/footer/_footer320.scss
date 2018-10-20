@@ -17,7 +17,11 @@
         justify-content: flex-start;
         margin-bottom: 36px;
     }
+    &__logo-img {
+        display: none;
+    }
     &__logo-title {
+        margin-left: 0;
         color: #333333;
     }
     &__second-logo-part {
@@ -51,6 +55,9 @@
             display: block;
             text-align: left;
         }
+    .link:hover {
+        text-decoration: underline;
+    }
     }
 
     /*cont*/

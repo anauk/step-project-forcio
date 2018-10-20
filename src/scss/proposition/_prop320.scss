@@ -1,42 +1,80 @@
-
-    .propositions {
-        padding-top: 34px;
-        padding-bottom: 6px;
-        background: #f4f4f4;
-        position: relative;
-    }
-    .propositions__boxes {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        
+.propositions {
+    padding-top: 34px;
+    padding-bottom: 6px;
+    background: #f4f4f4;
+   /* position: relative;*/
+}
+.proposition__wraper {
+    @include flex-center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.propositions__boxes {
+    display: flex;
+    flex-direction: column;
+    flex: 100%;
+   text-align: center;
     }
 .propositions__box {
-    flex: 100%;
+    
+    margin-bottom: 38px;
 }
-    .propositions__heading {
-        margin-bottom: 34px;
-        color: #8d81ac;
-        font-size: 32px;
-        font-weight: 700;
-         line-height: 28px;             
-        text-align: center;
-    }
-    .boxes__box-heading {
-        color: #323232;
-        margin-top: 23px;
-        margin-bottom: 16px;
-         text-align: center;
-    }
-    .boxes__description {
-        
-        font-family: 'Lato', sans-serif;
-        color: #848e97;
-        font-size: 14px;
-        text-align: center;
-    }
+.propositions__icon {
+    @include flex-center;     
+    height: auto;
+}
+.propositions__icon img {
+    max-width: 100%;
+}
+.propositions__contecst {
+    
+}
+/*.propositions__box {
+    flex: 100%;
+}*/
+.propositions__heading {
+    margin-bottom: 34px;
+    color: #8d81ac;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 28px;
+    /*text-align: center;*/
+}
+
+.propositions__contecst-heading {
+    color: #323232;
+    margin-top: 23px;
+    margin-bottom: 16px;
+    /*text-align: center;*/
+}
+
+.propositions__contecst-description {
+    font-family: 'Lato', sans-serif;
+    color: #848e97;
+    font-size: 14px;
+    text-align: center;
+}
+/*.bcg-1 {
+    background-image: url(../img/editor.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}*/
 .propositions__img {
+//    flex: 100%;
+//    height: 519px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+}
+.propositions__img-block {
+    position: relative;
+    flex: 50%;
+    
+}
+/*.propositions__img {
+    background-img: #000;
     position: absolute;
     bottom: 0;
     right: 0;
-}
+}*/
