@@ -3,25 +3,29 @@
 
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    line-height: 23px;
-    font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
 }
+
 .container {
-    width: 100%;
-    max-width: 1200px;
-    min-width: 320px;
-    margin: 0 auto;
-    padding-left: 10px;
-    padding-right: 10px;
-    box-sizing: border-box;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1200px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .logo {
   @include flex-center;
   &__img {
 
+    width: 43px;
+    height: 41px;
+    background-image: url("../img/Logo-main-sprite.png");
+    background-position: 0 0;
   }
+  
   &__title {
     margin-left: 18px;
     font-size: 24px;
@@ -29,22 +33,37 @@ body {
   }
 }
 
-@include btn;
-.btn_pink {
-  background-color: $bcg-purple;
-  text-transform: capitalize;
-  font-weight: 700;
+
+.btn {
+  @include flex-center;
+  border-radius: 50vh;
+  box-sizing: border-box;
+  color: #fff;
+  transition: 0.3s;
+  &_pink {
+    background-color: $bcg-purple;
+    text-transform: capitalize;
+    font-weight: 700;
+    &:hover {
+      border: 1px solid $text-purple;
+      color: $text-purple;
+      background-color: #fff;
+    }
+  }
+  &_grey {
+    background-color: #806d7a;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
 }
 
-.btn_grey {
-  background-color: #806d7a;
-  text-transform: uppercase;
-  font-weight: 400;
-}
-
+@import 'navbar/navbar';
+@import 'header/header';
+@import 'subheader/subheader';
 @import 'proposition/prop';
 @import 'rewievs/rewievs';
 @import 'callback/callback';
 @import 'footer/footer';
+
 
 

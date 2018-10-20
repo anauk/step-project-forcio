@@ -1,0 +1,23 @@
+.header {
+  padding-top: 101px;
+  padding-bottom: 454px;
+  &__title {
+    margin-bottom: 25px;
+    font-size: 54px;
+  }
+  &__slogan {
+    margin-bottom: 12px;
+    font-size: 20px;
+    &-sub {
+      font-size: 16px;
+    }
+  }
+  &__btn {
+    width: 390px;
+    padding: 23px 0;
+    font-size: 21px;
+    &::after {
+      top: calc(100% + 19px);
+    }
+  }
+}

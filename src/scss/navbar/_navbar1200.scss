@@ -1,0 +1,28 @@
+.navbar{
+  padding-top: 29px;
+  padding-bottom: 30px;
+  &__flex-wrapper {
+    position: relative;
+    justify-content: flex-end;
+  }
+  &__logo{
+    position: absolute;
+    left: 10px;
+  }
+  &__menu-block{
+    width: auto;
+    order: 0;
+  }
+  &__menu {
+    margin-top: 0;
+    &-item {
+      margin-right: 48px;
+      &:last-child{
+        margin-right: 48px;
+      }
+    }
+  }
+  &__buy-btn {
+    order: 0;
+  }
+}
