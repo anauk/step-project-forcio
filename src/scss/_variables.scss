@@ -1,0 +1,24 @@
+$bcg-purple: #8e82ad;
+$text-purple: #8d81ac;
+$footer-text-color: #848e97;
+$footer-header-color: #323232;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex-space {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@mixin btn {
+  .btn {
+    @include flex-center;
+    border-radius:  50vh;
+    color: #fff;
+  }
+}

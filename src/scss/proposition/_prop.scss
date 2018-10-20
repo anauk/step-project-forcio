@@ -1,0 +1,4 @@
+@import 'prop320';
+@media screen and (min-width: 401px){@import 'prop480';}
+@media screen and (min-width: 481px){@import 'prop768';}
+@media screen and (min-width: 993px){@import 'prop1200';}

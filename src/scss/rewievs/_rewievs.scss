@@ -1,0 +1,4 @@
+@import 'rewievs320';
+@media screen and (min-width: 401px){@import 'rewievs480';}
+@media screen and (min-width: 481px){@import 'rewievs768';}
+@media screen and (min-width: 993px){@import 'rewievs1200';}
