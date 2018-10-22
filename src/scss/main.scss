@@ -4,6 +4,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
@@ -62,6 +63,8 @@ body {
 @import 'subheader/subheader';
 @import 'proposition/prop';
 @import 'rewievs/rewievs';
+@import 'clients-Co/clients-Co';
+@import 'pricing/pricing';
 @import 'callback/callback';
 @import 'footer/footer';
 

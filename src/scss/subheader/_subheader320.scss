@@ -4,11 +4,8 @@
   text-align: center;
   &__title {
     margin-bottom: 14px;
-    color: #635c73;
-    font-size: 30px;
-    font-weight: 700;
+    @include title(30px, #635c73, 700, uppercase);
     line-height: 1.5;
-    text-transform: uppercase;
   }
   &__slogan {
     margin-bottom: 10px;

@@ -1,0 +1,22 @@
+.clients-Co{
+  padding-top: 80px;
+
+  &__title{
+    margin-bottom: 80px;
+    font-size: 42px;
+  }
+  &__clients{
+    //flex-direction: row;
+  }
+  &__client {
+    margin-bottom: 66px;
+    width: 319px;
+  }
+  &__footer{
+    display: none;
+  }
+  &__line{
+    width: 360px;
+    height: 1px;
+  }
+}

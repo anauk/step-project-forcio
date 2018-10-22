@@ -15,6 +15,12 @@ $footer-header-color: #323232;
   align-items: center;
   flex-wrap: wrap;
 }
+@mixin title ($fs, $color, $fw: 700, $tt: 'capitalize'){
+  font-size: $fs;
+  color: $color;
+  font-weight: $fw;
+  text-transform: $tt;
+}
 
 @mixin github-btn($elem) {
   #{$elem} {
