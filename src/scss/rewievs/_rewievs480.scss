@@ -1,4 +1,11 @@
-.mySlides__item_img {
+.mySlides__item-img {
     /*float: left;
     margin-left: 23.4vw;*/
+}
+.mySlides__wraper{
+    @include flex-center;
+}
+.mySlides__item-img {
+    margin-right: 23px;
+    margin-bottom: 48px;
 }
