@@ -1,0 +1,22 @@
+.clients-Co {
+  padding-top: 98px;
+
+  &__title {
+    margin-bottom: 85px;
+    font-size: 48px;
+    line-height: initial;
+  }
+  &__client {
+    margin-bottom: 105px;
+    flex: 27%;
+  }
+
+  &__footer {
+    margin-top: 10px;
+    margin-bottom: 16px;
+  }
+  &__line {
+    width: 65vw;
+    height: 2px;
+  }
+}

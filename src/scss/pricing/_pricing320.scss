@@ -1,0 +1,14 @@
+.pricing{
+  padding-top: 71px;
+  padding-bottom: 93px;
+  background: url(../img/pricing-bg.jpg) center center no-repeat #4b3b4e;
+  text-align: center;
+  &__title{
+    margin-bottom: 40px;
+    @include title(28px, #fff);
+    line-height: 1.4;
+  }
+  &__packages{
+
+  }
+}

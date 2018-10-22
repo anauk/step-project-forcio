@@ -22,6 +22,7 @@ $footer-header-color: #323232;
   text-transform: $tt;
 }
 
+//этот миксин оказался бесполезен, поскольку в итоге используется только один раз, но оставили, чтоб показать, что имеем
 @mixin github-btn($elem) {
   #{$elem} {
     @include flex-space;
