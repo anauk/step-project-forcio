@@ -20,6 +20,7 @@
 }
 
 .input {
+    
     margin-bottom: 15px;
     width: 290px;
     height: 42px;
@@ -48,15 +49,17 @@
 .form {
     @include flex-center;
     flex-direction: column;
-    width: 100%;
+    flex: 100%;
 }
 
 .form__inputs {
     @include flex-center;
     flex-direction: column;
+    flex: 100%;
 }
 
 .form__btn-submit {
+    
     padding-top: 16px;
     padding-left: 36px;
     padding-bottom: 16px;
