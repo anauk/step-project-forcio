@@ -1,19 +1,11 @@
-.propositions__box {
-    @include flex-space;
-    
+.mySlides__item-img {
+    /*float: left;
+    margin-left: 23.4vw;*/
 }
-.propositions__heading {
-    text-align: left;
+.mySlides__wraper{
+    @include flex-center;
 }
-.propositions__contecst-heading {
-    text-align: left;
-}
-.propositions__contecst-description {
-    text-align: left;
-}
-.propositions__icon {
-    flex: 20%;
-}
-.propositions__contecst {
-    flex: 80%;
+.mySlides__item-img {
+    margin-right: 23px;
+    margin-bottom: 48px;
 }

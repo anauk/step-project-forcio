@@ -1,44 +1,60 @@
 .propositions {
-    padding-top: 34px;
-    padding-bottom: 6px;
+    box-sizing: border-box;
+    padding-top: 10.6vw;
+    padding-bottom: 1.9vw;
     background: #f4f4f4;
-   /* position: relative;*/
+    /* position: relative;*/
 }
+
 .proposition__wraper {
-    @include flex-center;
+    /*@include flex-center;
+    align-items: flex-start;
     flex-wrap: wrap;
-    text-align: center;
+    text-align: center; */
+    /*position: relative;*/
 }
+
+.proposition__wraper {
+    @include clearfix;
+}
+
 .propositions__boxes {
     display: flex;
     flex-direction: column;
-    flex: 100%;
-   text-align: center;
-    }
-.propositions__box {
-    
-    margin-bottom: 38px;
+    flex-wrap: wrap;
+
+    /*flex: 100%;*/
+    text-align: center;
 }
+
+.propositions__box {
+    margin-bottom: 38px;
+    flex: 100%;
+
+}
+
 .propositions__icon {
-    @include flex-center;     
+    @include flex-center;
     height: auto;
 }
+
 .propositions__icon img {
     max-width: 100%;
 }
-.propositions__contecst {
-    
-}
-/*.propositions__box {
-    flex: 100%;
-}*/
+
 .propositions__heading {
     margin-bottom: 34px;
     color: #8d81ac;
     font-size: 32px;
     font-weight: 700;
     line-height: 28px;
-    /*text-align: center;*/
+    text-align: center;
+}
+
+.propositions__contecst {
+    box-sizing: border-box;
+    line-height: 15px;
+    padding-left: 23px;
 }
 
 .propositions__contecst-heading {
@@ -53,28 +69,41 @@
     color: #848e97;
     font-size: 14px;
     text-align: center;
+    line-height: 20px;
 }
+
 /*.bcg-1 {
     background-image: url(../img/editor.jpg);
     background-repeat: no-repeat;
     background-position: bottom right;
 }*/
+
 .propositions__img {
-//    flex: 100%;
-//    height: 519px;
-    position: absolute;
+    //    flex: 100%;
+    //    height: 519px;
+    /*position: absolute;
     bottom: 0;
-    left: 0;
-    
+    left: 0;*/
+    // max-width: 100%;
 }
+
 .propositions__img-block {
-    position: relative;
-    flex: 50%;
-    
+    /*float: 0;*/
+    width: 100%;
+    margin-right: 0;
+    /* margin-left: 90px;*/
 }
-/*.propositions__img {
-    background-img: #000;
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*.propositions__img-block {
+    width: 700px;
     position: absolute;
     bottom: 0;
     right: 0;
+    display: block;
 }*/

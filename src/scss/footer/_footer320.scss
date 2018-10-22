@@ -1,9 +1,9 @@
-
 .footer {
     padding-top: 12.5vw;
-    padding-bottom: 15.6px;    
+    padding-bottom: 15.6px;
     text-align: left;
 }
+
 .footer__flex-blok {
     display: flex;
     justify-content: space-between;
@@ -11,15 +11,19 @@
 }
 
 .logo-box {
-    flex: 100%;    
+    flex: 100%;
     margin-bottom: 36px;
     &__logo {
         justify-content: flex-start;
         margin-bottom: 36px;
     }
+    &__logo:hover .logo__img {
+        background-position: 0 41px;
+    }
     &__logo-img {
         display: none;
     }
+    
     &__logo-title {
         margin-left: 0;
         color: #333333;
@@ -27,78 +31,86 @@
     &__second-logo-part {
         color: $text-purple;
     }
-    &__text {        
+    &__text {
         color: $footer-text-color;
         font-size: 14px;
         line-height: 21px;
     }
-    
+
 }
-    /*nav*/
+
+/*nav*/
+
 .footer-nav {
-        flex: 100%;
-        &__header {
-            margin-bottom: 23px;
-            color: $footer-header-color;
-            font-size: 16px;
-            line-height: 28px;
-        }
-        .link_color {
-            color: $text-purple;
-        }
-        .link_size {
-            font-size: 15px;
-            line-height: 23px;
-        }
-        .link_block {
-            margin-top: 4px;
-            display: block;
-            text-align: left;
-        }
+    flex: 100%;
+    margin-bottom: 37px;
+    &__header {
+        margin-bottom: 23px;
+        color: $footer-header-color;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .link_color {
+        color: $text-purple;
+    }
+    .link_size {
+        font-size: 15px;
+        line-height: 23px;
+    }
+    .link_block {
+        display: block;
+        text-align: left;
+    }
     .link:hover {
         text-decoration: underline;
     }
-    }
+}
 
-    /*cont*/
-    .contacts {
-        flex: 100%;
-        & __phone {
-            margin-bottom: 15px;
-            color: #31384d;
-            font-size: 30px;
-            font-weight: 700;
-            line-height: 28px;
-        }
-        &__text {
-            margin-bottom: 37px;
-            color: $footer-text-color;
-            font-size: 12px;
-            line-height: 28px;
-            text-align: left;
-        }
-        &__header {
-            margin-bottom: 20px;
-            color: $footer-header-color;
-            font-size: 16px;
-            line-height: 28px;
-        }
-        &__text-s {
-            color: $footer-text-color;
-            font-size: 14px;            
-            line-height: 23px;
-        }
+/*cont*/
+
+.contacts {
+    flex: 100%;
+    margin-bottom: 39px;
+    &__phone-number {
+        margin-bottom: 15px;
+        color: #31384d;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 28px;
     }
+    &__text {
+        margin-bottom: 38px;
+        color: $footer-text-color;
+        font-size: 12px;
+        line-height: 28px;
+
+    }
+    &__header {
+        margin-bottom: 20px;
+        color: $footer-header-color;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    &__text-s {
+        color: $footer-text-color;
+        font-size: 14px;
+        line-height: 23px;
+    }
+}
+
 //dwgjhkjnh
-    .info {
-        flex: 100%;
-        &__header {
-            margin-bottom: 24px;
-            color: $footer-header-color;
-            font-size: 16px;            
-            line-height: 28px;
-        }
-        &__text {
-            color: $footer-text-color;
-        }
+.info {
+    flex: 100%;
+    &__header {
+        margin-bottom: 24px;
+        color: $footer-header-color;
+        font-size: 16px;
+        line-height: 28px;
     }
+    &__text {
+        color: $footer-text-color;
+        font-size: 14px;
+        line-height: 23px;
+        text-align: justify;
+    }
+}
