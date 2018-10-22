@@ -7,10 +7,7 @@
 
   &__title {
     margin-bottom: 12px;
-    color: #fff;
-    font-size: 48px;
-    font-weight: 700;
-    text-transform: capitalize;
+    @include title(48px, #fff);
   }
   &__slogan {
     margin-bottom: 12px;
