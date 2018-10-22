@@ -28,7 +28,7 @@
     position: absolute;
     top: 50%;
     width: auto;
-    margin-top: -22px;
+    margin-top: 5.3vw;
     color: rgb(178, 178, 178);
     font-weight: 100;
     font-size: 24px;
@@ -58,14 +58,15 @@
     margin-bottom: 23px;
     color: $text-purple;
     font-size: 16px;
+    line-height: 32px;
 }
 
 .mySlides__item_text {
     margin-bottom: 16px;
     font-family: 'Lato', sans-serif;
     color: #333333;
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 17px;
+    line-height: 24px;
 }
 
 .mySlides__item_acsent {
@@ -124,8 +125,6 @@
     padding-top: 17px;
     padding-bottom: 17px;
     font-size: 21px;
-    font-weight: 400;
-    line-height: 30px;
     text-align: center;
     /*text-decoration: none;*/
     border-radius: 4px;

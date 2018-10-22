@@ -1,0 +1,18 @@
+.propositions__heading,
+.propositions__img-block {
+    float: right;
+    width: 50%;
+}
+.propositions__boxes {
+    float: left;
+    width: 40%;
+    /*margin-right: 90px;*/
+}
+.propositions__box {    
+    flex: 40%;  
+    margin-bottom: 0;
+}
+.propositions__heading {
+    margin-bottom: 29px;
+    text-align: left;
+}

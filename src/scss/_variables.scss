@@ -16,7 +16,13 @@ $footer-header-color: #323232;
   flex-wrap: wrap;
 }
 
-
+@mixin clearfix {
+    &::after {
+        display: table;
+        clear: both;
+        content: '';
+    }
+}
 /*
 
 @mixin btn {
