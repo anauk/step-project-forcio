@@ -52,6 +52,7 @@
 }
 
 .propositions__contecst {
+    margin-top: 23px;
     box-sizing: border-box;
     line-height: 15px;
     padding-left: 23px;
@@ -59,11 +60,13 @@
 
 .propositions__contecst-heading {
     color: #323232;
-    margin-top: 23px;
+   /* margin-top: 23px;*/
     margin-bottom: 16px;
     /*text-align: center;*/
 }
-
+/*.propositions__contecst-heading:first-child {
+    margin-top: 23px;
+}*/
 .propositions__contecst-description {
     font-family: 'Lato', sans-serif;
     color: #848e97;

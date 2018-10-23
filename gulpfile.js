@@ -81,7 +81,9 @@ gulp.task('serve', function (){
 gulp.task('sass', function(){
     return gulp.src('./src/scss/*.scss')
         .pipe(sourcemaps.init())
-        .pipe(sass())
+        .pipe(sass().on('erroe', function(error){
+        console.log(error);
+    }))
         .pipe(sourcemaps.write())
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
