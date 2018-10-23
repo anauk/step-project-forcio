@@ -52,9 +52,12 @@ body {
     }
   }
   &_grey {
-    background-color: #806d7a;
+    background-color: rgba(255, 255, 255, 0.15);
     text-transform: uppercase;
-    font-weight: 400;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.7);
+      color:  #7f6d78;
+    }
   }
 }
 
