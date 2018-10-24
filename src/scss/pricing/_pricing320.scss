@@ -12,6 +12,10 @@
     @include flex-center;
     flex-wrap: wrap;
   }
+  &__package-wrapper {
+    width: 100%;
+    @include flex-center;
+  }
   &__package {
     margin-bottom: 14px;
     width: 257px;

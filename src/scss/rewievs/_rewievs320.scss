@@ -119,10 +119,10 @@
 
 .social-btn {
     box-sizing: border-box;
-    display: block;
-    width: 280px;
+    display: block; // inline-block
+    width: 280px; // change for larger screens
     /*height: 50px;*/
-    padding-left: 39px;
+    padding-left: 39px; // это не нужно
     padding-top: 17px;
     padding-bottom: 17px;
     font-size: 21px;
@@ -131,6 +131,7 @@
     border-radius: 4px;
     position: relative;
     margin-bottom: 18px;
+    // transition: ...
 }
 
 .social-btn_github {
@@ -170,7 +171,7 @@
 .fab {
     position: absolute;
     display: inline-block;
-    top: 17px;
+    top: 17px; // top 50%, translate, transform...
     left: 25px;
 }
 

@@ -90,7 +90,9 @@
 .propositions__img-block {
     /*float: 0;*/
     width: 100%;
-    margin-right: 0;
+    margin-right: 0; // don't need
+    text-align: right; // must be
+    // decrease size for 320 resolution
     /* margin-left: 90px;*/
 }
 
