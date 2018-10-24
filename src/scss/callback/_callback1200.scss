@@ -1,31 +1,31 @@
 .callback {
     padding-top: 3.8vw;
     padding-bottom: 3.8vw;
-}
-
-.callback__flex-wraper {
+  &__flex-wraper {
     flex-direction: row;
-
-}
-.callback__heading {
+  }
+  &__heading {
     flex: 25%;
     margin-bottom: 0;
+  }
 }
 .form {
     flex: 75%;
     flex-direction: row;
-}
-.form__inputs {
+  &__inputs {
     flex: 0;
+  }
+  &__input{
+    margin: 0 19px 0 0;
+  }
 }
+
 .input {
+  &:last-child {
     margin-right: 19px;
-    margin-left: 0;
-    margin-bottom: 0;
+  }
 }
-.input:last-child {
-    margin-right: 19px;
-}
+
 
 
 

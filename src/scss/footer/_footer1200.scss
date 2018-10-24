@@ -1,31 +1,28 @@
-/*@media (min-width: 993px) {
-    
-}*/
-
 .footer {
     padding-top: 4.9vw;
     padding-bottom: 4.9vw;
     text-align: left;
+    &__flex-blok {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__logo-box {
+        flex: 25%;
+    }
+
+    &__footer-nav {
+        flex: 18%;
+    }
+
+    &__contacts {
+        flex: 32%;
+    }
+
+    &__info {
+        flex: 25%;
+    }
 }
 
-.footer__flex-blok {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
 
-.logo-box {
-    flex: 25%;
-}
 
-.footer-nav {
-    flex: 18%;
-}
-
-.contacts {
-    flex: 32%;
-}
-
-.info {
-    flex: 25%;    
-}

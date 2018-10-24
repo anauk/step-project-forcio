@@ -76,7 +76,9 @@ gulp.task('serve', function (){
 gulp.task('sass', function(){
     return gulp.src('./src/scss/*.scss')
         .pipe(sourcemaps.init())
-        .pipe(sass())
+        .pipe( sass().on('error', function(error){
+            console.log( error );
+        }))
         .pipe(sourcemaps.write())
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
@@ -86,16 +88,6 @@ gulp.task('sass', function(){
         .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(gulp.dest('./build/css'))
 })
-
-/*gulp.task('sass', function(){
-    return gulp.src('./src/scss/!*.scss')
-        .pipe(sourcemaps.init())
-        .pipe( sass().on('error', function(error){
-            console.log( error );
-        }))
-        .pipe(sourcemaps.write())
-        .pipe(gulp.dest('./dist/css'))
-})*/
 
 gulp.task('img', function(){
     return gulp.src('./src/img/**/*')

@@ -1,46 +1,25 @@
-.propositions__heading,
-.propositions__img-block {
+.propositions {
+  &__heading,
+  &__img-block {
     float: right;
     width: 50%;
-}
-.propositions__boxes {
+  }
+  &__boxes {
     float: left;
     width: 40%;
-    /*margin-right: 90px;*/
-}
-.propositions__box {    
-    flex: 40%;  
+  }
+  &__box {
+    flex: 40%;
     margin-bottom: 0;
-}
-.propositions__heading {
+  }
+  &__heading {
     margin-bottom: 29px;
     text-align: left;
-}
-
-.propositions__boxes {
-    flex: 40%;
-}
-.propositions__box {
-    
-}
-.proposition__wraper {
-   
-}
-.boxes__box-heading{
-   
-}
-.boxes__description {
-   
-}
-.propositions__boxes {
-    flex: 40%;
-    order: -1; //задает порядок следования ел
-   
-}
-.propositions__heading {
+  }
+  &__heading {
     flex: 50%;
-}
-.propositions__img {
-     /*left: 612px;*/
-    
+  }
+  &__contecst-first {
+    margin-top: 16px;
+  }
 }
