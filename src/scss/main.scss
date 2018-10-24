@@ -34,7 +34,6 @@ body {
   }
 }
 
-
 .btn {
   @include flex-center;
   border-radius: 50vh;
@@ -42,19 +41,30 @@ body {
   color: #fff;
   transition: 0.3s;
   &_pink {
-    background-color: $bcg-purple;
+    background-color: $bcg-color-accent;
     text-transform: capitalize;
     font-weight: 700;
     &:hover {
-      border: 1px solid $text-purple;
-      color: $text-purple;
+      border: 1px solid $text-color-one;
+      color: $text-color-one;
       background-color: #fff;
     }
   }
   &_grey {
-    background-color: #806d7a;
+    background-color: rgba(255, 255, 255, 0.15);
     text-transform: uppercase;
-    font-weight: 400;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.7);
+      color:  #7f6d78;
+    }
+  }
+}
+
+.clearfix {
+  &::after {
+    display: table;
+    clear: both;
+    content: '';
   }
 }
 

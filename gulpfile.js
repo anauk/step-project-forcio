@@ -59,11 +59,6 @@ gulp.task('clean', function(){
 })
 
 gulp.task('serve', function (){
-    /*runSequence('clean', ['sass'], function(){
-        browserSync.init({
-            server: "./build/"
-        })
-    })*/
     browserSync.init({
         server: "./build/"
     })
@@ -81,7 +76,9 @@ gulp.task('serve', function (){
 gulp.task('sass', function(){
     return gulp.src('./src/scss/*.scss')
         .pipe(sourcemaps.init())
-        .pipe(sass())
+        .pipe( sass().on('error', function(error){
+            console.log( error );
+        }))
         .pipe(sourcemaps.write())
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
@@ -91,8 +88,6 @@ gulp.task('sass', function(){
         .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(gulp.dest('./build/css'))
 })
-
-
 
 gulp.task('img', function(){
     return gulp.src('./src/img/**/*')
@@ -110,6 +105,9 @@ gulp.task('build', function() {
         ['lint', 'img', 'sass', 'minify'],
         'serve');
 });
+
+
+
 
 gulp.task('default', ['build'], function(){
     console.log('=== ALL DONE ===')

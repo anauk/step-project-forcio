@@ -1,26 +1,49 @@
-/*@media (min-width: 0px) {*/
-
 .reviews {
-    /*padding-top: 63px;*/
-    padding-bottom: 12.5vw;
-    /*padding-top: 19.7vw;*/
+    padding-bottom: 75px;
     text-align: center;
 }
-
 .slidershow-container {
     padding-top: 63px;
     padding-bottom: 35px;
     max-width: 1000px;
     position: relative;
     margin: auto;
-
 }
-
 .mySlides {
     padding: 0 31px;    
     font-family: 'Lato', sans-serif;
     color: #333333;
     text-align: center;
+    &__item-name {
+        margin-bottom: 7px;
+        color: #474747;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    &__item-post {
+        margin-bottom: 23px;
+        text-align: left;
+    }
+    &__item-post a{
+        color: $text-color-one;
+        font-size: 16px;
+    }
+    &__item-text {
+        padding: 0 24px;
+        margin-bottom: 16px;
+        font-family: 'Lato', sans-serif;
+        color: #333333;
+        font-size: 17px;
+        line-height: 24px;
+    }
+    &__item-acsent {
+        color: $text-color-one;
+    }
+    &__item-time {
+        color: #848e97;
+        font-size: 16px;
+        line-height: 32px;
+    }
 }
 .prev,
 .next {
@@ -29,7 +52,7 @@
     top: 50%;
     width: auto;
     margin-top: 30px;
-    color: rgb(178, 178, 178);
+    color: #a4a5a4;
     font-weight: 100;
     font-size: 24px;
     transition: 0.6s ease;
@@ -45,39 +68,6 @@
 }
 .prev {
     left: 0;
-}
-.mySlides__item-name {
-    margin-bottom: 7px;
-    color: #474747;
-    font-size: 24px;
-    font-weight: 700;
-}
-
-
-.mySlides__item-post {
-    margin-bottom: 23px;
-    color: $text-purple;
-    font-size: 16px;
-    line-height: 32px;
-}
-
-.mySlides__item-text {
-    padding: 0 24px;
-    margin-bottom: 16px;
-    font-family: 'Lato', sans-serif;
-    color: #333333;
-    font-size: 17px;
-    line-height: 24px;
-}
-
-.mySlides__item-acsent {
-    color: $text-purple;
-}
-
-.mySlides__item-time {
-    color: #848e97;
-    font-size: 16px;
-    line-height: 32px;
 }
 
 .fade {
@@ -115,65 +105,60 @@
 
 .social-item {
     margin-bottom: 30px;
+    &__details {
+        color: $text-color-two;
+        font-size: 14px;
+    }
 }
-
+.social-item:last-child{
+    margin-bottom: 0;
+}
 .social-btn {
     box-sizing: border-box;
     display: block;
     width: 280px;
-    /*height: 50px;*/
-    padding-left: 39px;
     padding-top: 17px;
     padding-bottom: 17px;
     font-size: 21px;
     text-align: center;
-    /*text-decoration: none;*/
     border-radius: 4px;
     position: relative;
     margin-bottom: 18px;
-}
-
-.social-btn_github {
-    background-color: #f3f3f3;
-    color: #000000;
-}
-.social-btn_github:hover {
-    background-color: #2b414d;;
-    color: #fff;
-}
-.social-btn_twitter {
-    background-color: #26a6d1;
-    color: #ffffff;
-}
-
-.social-btn_twitter:hover {
-    border: 1px solid #26a6d1;
-    background-color: #ffffff;
-    color: #26a6d1;
-}
-
-.social-btn_facebook {
-    background-color: #3b5998;
-    color: #ffffff;
-}
-.social-btn_facebook:hover {
-    border: 1px solid #3b5998;
-    background-color: #ffffff;
-    color: #3b5998;
-}
-.social-item__details {
-    color: $footer-text-color;
-    font-size: 14px;
-    line-height: 32px;
+    transition: 0.4s;
+    &_github {
+        background-color: #f3f3f3;
+        color: #000;
+    }
+    &_github:hover {
+        background-color: #2b414d;;
+        color: #fff;
+    }
+    &_twitter {
+        background-color: #26a6d1;
+        color: #fff;
+        border: 1px solid #26a6d1;
+        &:hover {
+            border: 1px solid #26a6d1;
+            background-color: #fff;
+            color: #26a6d1;
+        }
+    }
+    &_facebook {
+        background-color: #3b5998;
+        color: #fff;
+        border: 1px solid #3b5998;
+        &:hover {
+            border: 1px solid #3b5998;
+            background-color: #ffffff;
+            color: #3b5998;
+        }
+    }
 }
 
 .fab {
     position: absolute;
     display: inline-block;
-    top: 17px;
+    top: 50%;
+    transform: translate(0, -50%);
     left: 25px;
 }
-
-/*.facebook-text {
-    display: inline-block;
-}*/

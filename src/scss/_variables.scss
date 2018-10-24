@@ -1,7 +1,7 @@
-$bcg-purple: #8e82ad;
-$text-purple: #8d81ac;
-$footer-text-color: #848e97;
-$footer-header-color: #323232;
+$bcg-color-accent: #8e82ad; // переименовать переменные?!
+$text-color-one: #8d81ac;
+$text-color-two: #848e97;
+$text-color-three: #323232;
 
 @mixin flex-center {
   display: flex;
@@ -23,7 +23,7 @@ $footer-header-color: #323232;
 }
 
 
-//этот миксин оказался бесполезен, поскольку в итоге используется только один раз, но оставили, чтоб показать, что умеем
+//этот миксин оказался бесполезен, поскольку в итоге используется один раз, но оставили, чтоб показать, что умеем
 @mixin github-btn($elem) {
   #{$elem} {
     @include flex-space;
@@ -58,26 +58,3 @@ $footer-header-color: #323232;
     }
   }
 }
-
-
-@mixin clearfix {
-    &::after {
-        display: table;
-        clear: both;
-        content: '';
-    }
-}
-
-/*
-
-@mixin btn {
-  .btn {
-    @include flex-center;
-    border-radius:  50vh;
-    box-sizing: border-box;
-    color: #fff;
-    transition: 0.3s;
-  }
-}*/
-
-//можно еще сделать @mixin для кнопок социальных сетей под каруселью

@@ -11,14 +11,14 @@
   }
   &__slogan {
     margin-bottom: 12px;
-    color: $text-purple;
+    color: $text-color-one;
     font-size: 18px;
     line-height: 2;
     text-transform: capitalize;
     &-sub {
       font-size: 14px;
       text-transform: uppercase;
-      color: $footer-text-color;
+      color: $text-color-two;
     }
   }
   &__btn {
@@ -35,7 +35,7 @@
       top: calc(100% + 12px);
       font-weight: 400;
       font-size: 14px;
-      color: $footer-text-color;
+      color: $text-color-two;
       text-transform: capitalize;
     }
   }

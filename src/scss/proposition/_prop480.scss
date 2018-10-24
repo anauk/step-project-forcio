@@ -1,25 +1,24 @@
-.propositions__box {
+.propositions {
+  &__box {
     @include flex-space;
     flex: 100%;
-}
-.propositions__heading {
-   
-}
-.propositions__contecst-heading {
-    text-align: left;
-}
-.propositions__contecst-description {
-    text-align: left;
-}
-.propositions__icon {
-    flex: 20%;
-   
-}
-.propositions__contecst {
+  }
+  &__contecst {
     flex: 80%;
-     
-}
-.propositions__img-block {
-    /*float: right;*/
+    &-heading {
+      text-align: left;
+    }
+    &-description {
+      text-align: left;
+    }
+  }
+  &__icon {
+    flex: 20%;
+  }
+  &__img-block {
     width: 100%;
+  }
+  &__img {
+    height: 519px;
+  }
 }

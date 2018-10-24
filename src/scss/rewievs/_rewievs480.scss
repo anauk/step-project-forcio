@@ -1,11 +1,10 @@
-.mySlides__item-img {
-    /*float: left;
-    margin-left: 23.4vw;*/
+.mySlides{
+    &__wraper{
+        @include flex-center;
+    }
+    &__item-img {
+        margin-right: 23px;
+        margin-bottom: 48px;
+    }
 }
-.mySlides__wraper{
-    @include flex-center;
-}
-.mySlides__item-img {
-    margin-right: 23px;
-    margin-bottom: 48px;
-}
+
