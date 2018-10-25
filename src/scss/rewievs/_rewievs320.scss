@@ -104,23 +104,23 @@
 
 /*buttons*/
 
-.social-btns {
+.reviews__social-btns {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.social-item {
+.reviews__social-item {
     margin-bottom: 30px;
-    &__details {
+   &:last-child {
+    margin-bottom: 0;
+}
+}
+ .reviews__social-details {
         color: $text-color-two;
         font-size: 14px;
     }
-}
 
-.social-item:last-child {
-    margin-bottom: 0;
-}
 
 .social-btn {
     box-sizing: border-box;
