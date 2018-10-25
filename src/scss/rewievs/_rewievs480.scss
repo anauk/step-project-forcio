@@ -1,5 +1,5 @@
-.mySlides{
-    &__wraper{
+.slidershow-container__mySlides{
+    &__wraper {
         @include flex-center;
     }
     &__item-img {

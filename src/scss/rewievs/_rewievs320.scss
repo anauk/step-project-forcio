@@ -1,34 +1,29 @@
 .reviews {
     padding-bottom: 75px;
     text-align: center;
+    &__slidershow-container {
+    position: relative;
+    margin: auto;
+    }
 }
 .slidershow-container {
     padding-top: 63px;
     padding-bottom: 35px;
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
+    max-width: 1000px;        
 }
-.mySlides {
+
+.slidershow-container__mySlides {
     padding: 0 31px;    
     font-family: 'Lato', sans-serif;
-    color: #333333;
+    color: #333;
     text-align: center;
-    &__item-name {
-        margin-bottom: 7px;
-        color: #474747;
-        font-size: 24px;
-        font-weight: 700;
-    }
-    &__item-post {
-        margin-bottom: 23px;
-        text-align: left;
-    }
-    &__item-post a{
+    
+   
+    &-post a{
         color: $text-color-one;
         font-size: 16px;
     }
-    &__item-text {
+    &-text {
         padding: 0 24px;
         margin-bottom: 16px;
         font-family: 'Lato', sans-serif;
@@ -36,17 +31,29 @@
         font-size: 17px;
         line-height: 24px;
     }
-    &__item-acsent {
+    &-acsent {
         color: $text-color-one;
     }
-    &__item-time {
+    &-time {
         color: #848e97;
         font-size: 16px;
         line-height: 32px;
     }
 }
-.prev,
-.next {
+
+     .testimonial-name {
+        margin-bottom: 7px;
+        color: #474747;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .testimonial-post {
+        margin-bottom: 23px;
+        text-align: left;
+    }
+
+.slidershow-container-prev,
+.slidershow-container-next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -58,19 +65,19 @@
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
 }
-.next {
+.slidershow-container-next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
-.prev:hover,
-.next:hover {
+.slidershow-container-prev:hover,
+.slidershow-container-next:hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
-.prev {
+.slidershow-container-prev {
     left: 0;
 }
 
-.fade {
+.slidershow-container__mySlides_fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
