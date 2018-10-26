@@ -27,12 +27,12 @@
                 <div class="navbar__toggle-navbar-line"></div>
             </div>
             <ul class="navbar__menu">
-                <li class="navbar__menu-item navbar__menu-item_home"><a href="#" class="navbar__menu-link navbar__menu-link_home">Home</a>
+                <li class="navbar__menu-item navbar__menu-item_home"><a href="#headerSection" class="navbar__menu-link navbar__menu-link_home">Home</a>
                 </li>
-                <li class="navbar__menu-item"><a href="#" class="navbar__menu-link">Overview</a></li>
-                <li class="navbar__menu-item"><a href="#" class="navbar__menu-link">About Fork</a></li>
-                <li class="navbar__menu-item"><a href="#" class="navbar__menu-link">Buying Options</a></li>
-                <li class="navbar__menu-item"><a href="#" class="navbar__menu-link">Support</a></li>
+                <li class="navbar__menu-item"><a href="#propositionSection" class="navbar__menu-link">Overview</a></li>
+                <li class="navbar__menu-item"><a href="#aboutForkSection" class="navbar__menu-link">About Fork</a></li>
+                <li class="navbar__menu-item"><a href="#pricingSection" class="navbar__menu-link">Buying Options</a></li>
+                <li class="navbar__menu-item"><a href="#footerSection" class="navbar__menu-link">Support</a></li>
             </ul>
         </div>
 
@@ -41,7 +41,7 @@
     </div>
 </nav>
 
-<header class="header">
+<header id="headerSection" class="header">
     <div class="container">
         <h1 class="header__title">Fork App</h1>
         <p class="header__slogan">A real gamechanger in the world of web development</p>
@@ -106,7 +106,7 @@
     </div>
 </section>
 
-<section class="propositions">
+<section id = "propositionSection" class="propositions">
     <div class="container clearfix">
         <h2 class="propositions__heading propositions__heading-decktop">&lt;Here is what you get&gt;</h2>
 
@@ -236,7 +236,7 @@
     </div>
 </section>
 
-<section class="clients-Co">
+<section id = "aboutForkSection" class="clients-Co">
     <div class="container">
         <h2 class="clients-Co__title">People Are Talking About Fork</h2>
         <div class="clients-Co__clients">
@@ -279,7 +279,7 @@
     </div>
 </section>
 <!--section.pricing>div.container>h2.pricing__title+(div.pricing__packages>div.pricing__package*4>p.pricing__package-title+div.pricing__package-content>p.pricing__package-price{&#36;}>span.pricing__package-price_bold+^p.pricing__package-period{per month}+hr.pricing__package-line+ul.pricing__package-terms>(li.pricing__package-term*2)+^a.btn.btn_grey.pricing__purchase-btn{purchase})+p.pricing__footer-->
-<section class="pricing">
+<section id = "pricingSection" class="pricing">
     <div class="container">
         <h2 class="pricing__title">Fork Subscription Pricing</h2>
         <div class="pricing__packages">
@@ -358,7 +358,7 @@
     </div>
 </section>
 
-<footer class="footer">
+<footer id = "footerSection" class="footer">
     <div class="container">
         <div class="footer__flex-blok">
             <div class="logo-box footer__logo-box">
@@ -375,11 +375,11 @@
             <div class="footer-nav footer__footer-nav">
                 <div class="footer-nav__header">Navigation</div>
                 <div class="footer-nav__links">
-                    <a class="link link_color link_size" href="#">Home</a>
-                    <a class="link link_color link_size" href="#">Overview</a>
-                    <a class="link link_color link_size" href="#">About</a>
-                    <a class="link link_color link_size" href="#">Buying Options</a>
-                    <a class="link link_color link_size" href="#">Support</a>
+                    <a class="footer-nav__link footer-nav__link_color footer-nav__link_size" href="#headerSection">Home</a>
+                    <a class="footer-nav__link footer-nav__link_color footer-nav__link_size" href="#propositionSection">Overview</a>
+                    <a class="footer-nav__link footer-nav__link_color footer-nav__link_size" href="#aboutForkSection">About</a>
+                    <a class="footer-nav__link footer-nav__link_color footer-nav__link_size" href="#pricingSection">Buying Options</a>
+                    <a class="footer-nav__link footer-nav__link_color footer-nav__link_size" href="#footerSection">Support</a>
                 </div>
             </div>
 
