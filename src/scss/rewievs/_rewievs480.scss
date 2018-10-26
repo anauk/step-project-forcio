@@ -1,8 +1,8 @@
-.mySlides{
-    &__wraper{
+.slidershow-container__mySlides {
+    &-wraper {
         @include flex-center;
     }
-    &__item-img {
+    &-itemImg {
         margin-right: 23px;
         margin-bottom: 48px;
     }

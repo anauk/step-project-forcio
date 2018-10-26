@@ -7,7 +7,7 @@
 
  function showSlides(n) {
     
-     let slides = document.getElementsByClassName("mySlides");
+     let slides = document.getElementsByClassName("slidershow-container__mySlides");
 
 
      if (n > slides.length) {
