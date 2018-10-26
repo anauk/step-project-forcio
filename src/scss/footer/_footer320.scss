@@ -71,23 +71,23 @@
     font-size: 16px;
     line-height: 28px;
   }
-
-}
-
-.link {
-  display: block;
-  text-align: left;
-  &_color {
-    color: $text-color-one;
-  }
-  &_size {
-    font-size: 15px;
-    line-height: 23px;
-  }
-  &:hover {
-    text-decoration: underline;
+  &__link {
+    display: block;
+    text-align: left;
+    &_color {
+      color: $text-color-one;
+    }
+    &_size {
+      font-size: 15px;
+      line-height: 23px;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
+
+
 
 /*cont*/
 
