@@ -1,0 +1,111 @@
+.pricing {
+  padding-top: 71px;
+  padding-bottom: 93px;
+  background: url(../img/pricing-bg.jpg) center center no-repeat #4b3b4e;
+  text-align: center;
+  &__title {
+    margin-bottom: 42px;
+    @include title(28px, #fff);
+    line-height: 1.4;
+  }
+  &__packages {
+    @include flex-center;
+    flex-wrap: wrap;
+  }
+  &__package-wrapper {
+    width: 100%;
+    @include flex-center;
+  }
+  &__package {
+    margin-bottom: 14px;
+    width: 257px;
+    background-color:  rgba(255, 255, 255, 0.11);
+    color: #fff;
+    &_enlarge {
+      width: 299px;
+      background-color:  rgba(0, 0, 0, 0.13);
+    }
+    &-title {
+      padding-top: 46px;
+      padding-bottom: 34px;
+      background-color:  rgba(255, 255, 255, 0.06);
+      font-size: 24px;
+      text-transform: uppercase;
+      &_enlarge {
+        padding-top: 51px;
+        padding-bottom: 43px;
+        background-color:  rgba(0, 0, 0, 0.11);
+      }
+    }
+    &-content {
+      padding-top: 32px;
+      padding-bottom: 38px;
+      &_enlarge {
+        padding-top: 15px;
+        padding-bottom: 47px;
+      }
+    }
+    &-price {
+      margin-bottom: 24px;
+      font-size: 60px;
+      &_enlarge {
+        margin-bottom: 21px;
+        font-size: 82px;
+      }
+      &_bold {
+        font-weight: 700;
+      }
+    }
+    &-period {
+      margin-bottom: 39px;
+      color: #8f8691;
+      font-size: 14px;
+      text-transform: uppercase;
+      &_enlarge{
+        margin-bottom: 49px;
+        color: #7a717c;
+      }
+    }
+    &-line{
+      margin-bottom: 31px;
+      width: 60px;
+      height: 5px;
+      background-color: $text-color-one;
+      text-transform: uppercase;
+      border: none;
+      &_enlarge {
+        margin-bottom: 41px;
+      }
+    }
+    &-terms{
+      margin-bottom: 37px;
+      &_enlarge {
+        margin-bottom: 82px;
+      }
+    }
+    &-term {
+      margin-bottom: 15px;
+      font-size: 16px;
+      text-transform: capitalize;
+      &_enlarge {
+        margin-bottom: 19px;
+      }
+    }
+    &-term:last-child{
+      margin-bottom: 0;
+    }
+  }
+  &__purchase-btn{
+    margin: 0 auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 160px;
+    font-size: 15px;
+    &_enlarge {
+      padding-top: 21px;
+      padding-bottom: 19px;
+      width: 190px;
+      font-size: 16px;
+    }
+  }
+}

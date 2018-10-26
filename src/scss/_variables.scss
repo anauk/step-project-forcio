@@ -1,0 +1,60 @@
+$bcg-color-accent: #8e82ad; // переименовать переменные?!
+$text-color-one: #8d81ac;
+$text-color-two: #848e97;
+$text-color-three: #323232;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-space {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@mixin title ($fs, $color, $fw: 700, $tt: 'capitalize'){
+  font-size: $fs;
+  color: $color;
+  font-weight: $fw;
+  text-transform: $tt;
+}
+
+
+//этот миксин оказался бесполезен, поскольку в итоге используется один раз, но оставили, чтоб показать, что умеем
+@mixin github-btn($elem) {
+  #{$elem} {
+    @include flex-space;
+    margin-top: 20px;
+    cursor: pointer;
+    border: 1px solid #d5d5d5;
+    border-radius: 0.25em;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    &__main {
+      @include flex-space;
+      padding: 3px 10px;
+      background-color: #eff3f6;
+      background-image: linear-gradient(-180deg, #fafbfc, #eff3f6 90%);
+      background-repeat: repeat-x;
+      background-position: -1px -1px;
+      background-size: 110% 110%;
+    }
+    &__icon {
+      margin-right: 4px;
+      @include flex-center;
+    }
+    &__text {
+      text-transform: capitalize;
+    }
+    &__num {
+      padding: 3px 10px;
+      vertical-align: middle;
+      background-color: #fff;
+      border-left: 1px solid #d5d5d5;
+    }
+  }
+}

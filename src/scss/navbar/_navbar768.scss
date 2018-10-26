@@ -1,0 +1,47 @@
+.navbar{
+  padding-top: 22px;
+  padding-bottom: 19px;
+  &__toggle-navbar {
+    display: none;
+  }
+  &__menu-block{
+    width: 100%;
+  }
+  &__menu {
+    position: static;
+    width: 100%;
+    @include flex-center;
+    margin-top: 20px;
+    &-item {
+      margin-right: 6.25vw;
+      &:last-child{
+        margin-right: 0;
+      }
+      &_home {
+        display: none;
+      }
+    }
+    &-link {
+      height: auto;
+      width: auto;
+      padding: 0;
+      border: none;
+      line-height: initial;
+      color: $text-color-one;
+      font-size: 16px;
+      font-weight: 700;
+      background-color: transparent;
+      &:hover {
+        color:  #fff;
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+  &__buy-btn {
+    padding: 12px 35px 11px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,12 @@
+.header {
+  padding-top: 60px;
+  &__title {
+    margin-bottom: 18px;
+    font-size: 82px;
+  }
+  &__slogan {
+    margin-bottom: 18px;
+    font-size: 30px;
+    line-height: initial;
+  }
+}

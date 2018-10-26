@@ -1,0 +1,164 @@
+.reviews {
+    padding-bottom: 75px;
+    text-align: center;
+}
+.slidershow-container {
+    padding-top: 63px;
+    padding-bottom: 35px;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+.mySlides {
+    padding: 0 31px;    
+    font-family: 'Lato', sans-serif;
+    color: #333333;
+    text-align: center;
+    &__item-name {
+        margin-bottom: 7px;
+        color: #474747;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    &__item-post {
+        margin-bottom: 23px;
+        text-align: left;
+    }
+    &__item-post a{
+        color: $text-color-one;
+        font-size: 16px;
+    }
+    &__item-text {
+        padding: 0 24px;
+        margin-bottom: 16px;
+        font-family: 'Lato', sans-serif;
+        color: #333333;
+        font-size: 17px;
+        line-height: 24px;
+    }
+    &__item-acsent {
+        color: $text-color-one;
+    }
+    &__item-time {
+        color: #848e97;
+        font-size: 16px;
+        line-height: 32px;
+    }
+}
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: 30px;
+    color: #a4a5a4;
+    font-weight: 100;
+    font-size: 24px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.prev {
+    left: 0;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*buttons*/
+
+.social-btns {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-item {
+    margin-bottom: 30px;
+    &__details {
+        color: $text-color-two;
+        font-size: 14px;
+    }
+}
+.social-item:last-child{
+    margin-bottom: 0;
+}
+.social-btn {
+    box-sizing: border-box;
+    display: block;
+    width: 280px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    font-size: 21px;
+    text-align: center;
+    border-radius: 4px;
+    position: relative;
+    margin-bottom: 18px;
+    transition: 0.4s;
+    &_github {
+        background-color: #f3f3f3;
+        color: #000;
+    }
+    &_github:hover {
+        background-color: #2b414d;;
+        color: #fff;
+    }
+    &_twitter {
+        background-color: #26a6d1;
+        color: #fff;
+        border: 1px solid #26a6d1;
+        &:hover {
+            border: 1px solid #26a6d1;
+            background-color: #fff;
+            color: #26a6d1;
+        }
+    }
+    &_facebook {
+        background-color: #3b5998;
+        color: #fff;
+        border: 1px solid #3b5998;
+        &:hover {
+            border: 1px solid #3b5998;
+            background-color: #ffffff;
+            color: #3b5998;
+        }
+    }
+}
+
+.fab {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 25px;
+}

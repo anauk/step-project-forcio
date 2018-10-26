@@ -1,0 +1,35 @@
+.footer {
+    padding-top: 8.3vw;
+    padding-bottom: 44px;
+    padding-left: 38px;
+    text-align: left;
+    &__flex-blok {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__logo-box {
+        flex: 50%;
+        margin-bottom: 92px;
+    }
+    &__footer-nav {
+        flex: 50%;
+    }
+    &__contacts {
+        flex: 50%;
+    }
+    &__info {
+        flex: 50%;
+    }
+
+}
+
+ 
+    
+
+
+
+
+.info {
+    flex: 50%;
+}

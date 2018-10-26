@@ -1,0 +1,25 @@
+.propositions {
+  &__heading,
+  &__img-block {
+    float: right;
+    width: 50%;
+  }
+  &__boxes {
+    float: left;
+    width: 40%;
+  }
+  &__box {
+    flex: 40%;
+    margin-bottom: 0;
+  }
+  &__heading {
+    margin-bottom: 29px;
+    text-align: left;
+  }
+  &__heading {
+    flex: 50%;
+  }
+  &__contecst-first {
+    margin-top: 16px;
+  }
+}

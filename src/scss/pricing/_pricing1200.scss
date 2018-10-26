@@ -1,0 +1,19 @@
+.pricing {
+  padding-top: 78px;
+  padding-bottom: 97px;
+  &__title {
+    margin-bottom: 71px;
+    font-size: 48px;
+    line-height: initial;
+  }
+  &__package-wrapper {
+    width: 25%;
+    max-width: 268px;
+    &_enlarge {
+      max-width: 312px;
+    }
+  }
+  &__package {
+    margin-bottom: 0;
+  }
+}

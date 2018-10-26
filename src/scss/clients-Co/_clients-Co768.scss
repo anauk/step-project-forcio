@@ -1,0 +1,38 @@
+.clients-Co {
+  padding-top: 80px;
+
+  &__title {
+    margin-bottom: 80px;
+    font-size: 42px;
+  }
+  &__clients {
+    flex-direction: row;
+  }
+  &__client {
+    margin-bottom: 54px;
+    flex: 42%;
+    &-logo {
+      height: 64px;
+      @include flex-center;
+    }
+    &-review{
+      width: 90%;
+    }
+  }
+  &__footer {
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 17px;
+    color: #928195;
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    &-br {
+      display: none;
+    }
+  }
+  &__line {
+    width: 91vw;
+    height: 2px;
+  }
+}

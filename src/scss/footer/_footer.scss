@@ -1,0 +1,5 @@
+
+@import 'footer320';
+@media screen and (min-width: 401px){@import 'footer480';}
+@media screen and (min-width: 481px){@import 'footer768';}
+@media screen and (min-width: 993px){@import 'footer1200';}

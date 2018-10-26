@@ -1,0 +1,121 @@
+.footer {
+  padding-top: 12.5vw;
+  padding-bottom: 15.6px;
+  &__flex-blok {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__logo-box {
+    margin-bottom: 36px;
+    flex: 100%;
+  }
+  &__footer-nav {
+    margin-bottom: 37px;
+    flex: 100%;
+  }
+  &__contacts {
+    flex: 100%;
+    margin-bottom: 39px;
+  }
+  &__info {
+    flex: 100%;
+    &-header {
+      margin-bottom: 24px;
+      color: $text-color-three;
+      font-size: 16px;
+      line-height: 28px;
+    }
+    &-text {
+      color: $text-color-two;
+      font-size: 14px;
+      line-height: 23px;
+      text-align: justify;
+      width: 95%;
+    }
+  }
+}
+.logo-box {
+  &__logo {
+    justify-content: flex-start;
+    margin-bottom: 36px;
+    &:hover .logo-box__logo-title {
+      color: $text-color-one;
+    }
+    &:hover .logo-box__second-logo-part {
+      color: #333;
+    }
+  }
+  &__logo-img {
+    display: none;
+  }
+  &__logo-title {
+    margin-left: 0;
+    color: #333;
+  }
+  &__second-logo-part {
+    color: $text-color-one;
+  }
+  &__text {
+    color: $text-color-two;
+    font-size: 14px;
+    line-height: 21px;
+    width: 95%;
+  }
+}
+
+.footer-nav {
+  &__header {
+    margin-bottom: 23px;
+    color: $text-color-three;
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+}
+
+.link {
+  display: block;
+  text-align: left;
+  &_color {
+    color: $text-color-one;
+  }
+  &_size {
+    font-size: 15px;
+    line-height: 23px;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/*cont*/
+
+.contacts {
+  &__phone-number {
+    margin-bottom: 15px;
+    color: #31384d;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  &__text {
+    margin-bottom: 38px;
+    color: $text-color-two;
+    font-size: 12px;
+    line-height: 28px;
+
+  }
+  &__header {
+    margin-bottom: 20px;
+    color: $text-color-three;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  &__address {
+    color: $text-color-two;
+    font-size: 14px;
+    line-height: 23px;
+    width: 95%;
+  }
+}
+

@@ -1,0 +1,10 @@
+.mySlides{
+    &__wraper{
+        @include flex-center;
+    }
+    &__item-img {
+        margin-right: 23px;
+        margin-bottom: 48px;
+    }
+}
+

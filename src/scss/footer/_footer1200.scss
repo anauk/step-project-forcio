@@ -1,0 +1,28 @@
+.footer {
+    padding-top: 4.9vw;
+    padding-bottom: 4.9vw;
+    text-align: left;
+    &__flex-blok {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__logo-box {
+        flex: 25%;
+    }
+
+    &__footer-nav {
+        flex: 18%;
+    }
+
+    &__contacts {
+        flex: 32%;
+    }
+
+    &__info {
+        flex: 25%;
+    }
+}
+
+
+

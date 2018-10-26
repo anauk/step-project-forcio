@@ -1,0 +1,100 @@
+.navbar{
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 33px;
+  padding-bottom: 33px;
+  background-color: #262626;
+  &__flex-wrapper {
+    @include flex-space;
+  }
+  &__logo:hover .logo__img{
+    background-position: 43px 0;
+  }
+  &__logo-title {
+    display: none;
+  }
+  &__menu-block {
+    order: 2;
+  }
+  &__toggle-navbar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    background-color: #262626;
+    &-line {
+      width: 26px;
+      height: 3px;
+      background-color: #fff;
+      margin-bottom: 6px;
+      transition: all 0.4s ease;
+      transform-origin: 0.8px;
+      &_short {
+        width: 20px;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__menu {
+    width: 100vw;
+    position: absolute;
+    z-index: 1;
+    right: -100vw;
+    top: 100%;
+    transition: all 0.4s linear;
+    &-link {
+      position: relative;
+      display: inline-block;
+      height: 22vw;
+      width: 100%;
+      box-sizing: border-box;
+      padding-left: 7%;
+      border-top: 2px solid #3b3b3b;
+      line-height: 22vw;
+      color: #fff;
+      font-size: 6.7vw;
+      background-color: #333;
+      transition: 0.3s;
+      &:hover {
+        color:  #8d81ac;
+        &::before {
+          position: absolute;
+          content: '';
+          height: 50%;
+          width: 4px;
+          left: 0;
+          top: 50%;
+          transform: translate(0, -50%);
+          background-color: #8d81ac;
+        }
+      }
+    }
+  }
+  &__buy-btn {
+    order: 1;
+    padding: 3.75vw 25px;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+}
+.active{
+  & .navbar__toggle-navbar-line_short {
+    width: 26px;
+  }
+  & .navbar__toggle-navbar-line:nth-of-type(1) {
+    transform: rotate(45deg);
+  }
+  & .navbar__toggle-navbar-line:nth-of-type(2) {
+    opacity: 0;
+  }
+  & .navbar__toggle-navbar-line:nth-of-type(3) {
+    transform: rotate(-45deg);
+  }
+  & .navbar__menu {
+    right: 0;
+  }
+}

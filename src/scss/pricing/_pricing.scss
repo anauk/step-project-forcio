@@ -1,0 +1,4 @@
+@import 'pricing320';
+@media screen and (min-width: 401px){@import 'pricing480';}
+@media screen and (min-width: 481px){@import 'pricing768';}
+@media screen and (min-width: 993px){@import 'pricing1200';}

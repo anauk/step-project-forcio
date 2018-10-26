@@ -1,0 +1,25 @@
+.footer {
+    padding-top: 10.4vw;
+    padding-bottom: 14.3vw;
+    &__flex-blok {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+.logo-box {
+    &__logo {
+        margin-bottom: 24px;
+        &:hover .logo-box__logo-img {
+            background-position: 0 41px;
+        }
+    }
+    &__logo-img {
+        display: block;
+    }
+    &__logo-title {
+        margin-left: 18px;
+    }
+}
+
+

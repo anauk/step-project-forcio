@@ -1,59 +1,409 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Step-Forkio</title>
-    <link rel="stylesheet" href="scss/style320.scss">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i|Montserrat:300,300i,400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+          integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body>
-   <header class="header">
-   <div class="container">
-   <a href="#" class="header__logo-link"><img src="" alt="" class="header__logo"></a>
-   <a href="#" class="header__title">forkio</a>
-   <div class="header__menu-block">
-   <ul class="header__menu">
-       <li class="header__menu-item"><a href="" class="header__item-link">Overview</a></li>
-       <li class="header__menu-item"><a href="" class="header__item-link">About Fork</a></li>
-       <li class="header__menu-item"><a href="" class="header__item-link">Buying Options</a></li>
-       <li class="header__menu-item"><a href="" class="header__item-link">Support</a></li>
-       <li class="header__menu-item"><a href="" class="header__item-link">Buy now</a></li>
-   </ul>
-   </div>
-   </div>
-   </header>
-   
-   <section class="title-section">
-       <div class="container">
-       <h2 class="title-section__main-title">Fork App</h2>
-       <p class="title-section__slogan">A real gamechanger in the world of web development</p>
-       <p class="title-section__slogan-sub">v.2.8 for mac and windows</p>
-       </div>
-   </section>
-   
-   <section class="editor">
-       <div class="container">
-           <h3 class="eritor__title">Revolutionary editor</h3>
-           <p class="eritor__slogan">Aenean cursus imperdiet nisl id fermentum</p>
-       </div>
-   </section>
-   
-   <section class="stiven">
-       <div class="container">
-           <h6>Steven Strange</h6>
-           <a href="">@DoctorS</a>
-           <a href="">@Pixelbuddha Suspendisse sodales sem est_ in scelerisque felis</a>
-           <p>2 hours ago</p>
-           <div>
-           <a href="">GitHub</a>
-           <a href="">Twitter</a>
-           <a href="">Facebook</a>
-           </div>
-       </div>
-   </section>
-   
-   <section class="propositions">
-       <div class="container"></div>
-   </section>
-    <script src=""></script>
+<nav class="navbar">
+    <div class="container navbar__flex-wrapper">
+        <a href="#" class="logo navbar__logo">
+            <div class="logo__img"></div>
+            <span class="logo__title navbar__logo-title">forkio</span>
+        </a>
+
+
+        <div class="navbar__menu-block">
+            <div class="navbar__toggle-navbar">
+                <div class="navbar__toggle-navbar-line navbar__toggle-navbar-line_short"></div>
+                <div class="navbar__toggle-navbar-line"></div>
+                <div class="navbar__toggle-navbar-line"></div>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__menu-item navbar__menu-item_home"><a href="#" class="navbar__menu-link navbar__menu-link_home">Home</a>
+                </li>
+                <li class="navbar__menu-item"><a href="#" class="navbar__menu-link">Overview</a></li>
+                <li class="navbar__menu-item"><a href="#" class="navbar__menu-link">About Fork</a></li>
+                <li class="navbar__menu-item"><a href="#" class="navbar__menu-link">Buying Options</a></li>
+                <li class="navbar__menu-item"><a href="#" class="navbar__menu-link">Support</a></li>
+            </ul>
+        </div>
+
+        <a href="" class="btn btn_pink navbar__buy-btn">Buy now</a>
+
+    </div>
+</nav>
+
+<header class="header">
+    <div class="container">
+        <h1 class="header__title">Fork App</h1>
+        <p class="header__slogan">A real gamechanger in the world of web development</p>
+        <p class="header__slogan-sub">v.2.8 for mac and windows</p>
+        <a href="#" class="btn btn_pink header__btn">Download For Free Now</a>
+    </div>
+</header>
+
+<section class="subheader">
+    <div class="container">
+        <h2 class="subheader__title">Revolutionary editor</h2>
+        <p class="subheader__slogan">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate
+            dignissim. Sed id metus id quam auctor molestie eget ut augue.</p>
+
+        <ul class="subheader__btns">
+            <li class="subheader__btns-item">
+                <button class="github-btn">
+                    <div class="github-btn__main">
+                        <div class="github-btn__icon">
+                            <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16"
+                                 aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                      d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"></path>
+                            </svg>
+                        </div>
+                        <p class="github-btn__text">Watch</p>
+                    </div>
+                    <p class="github-btn__num">1,397</p>
+                </button>
+            </li>
+            <li class="subheader__btns-item">
+                <button class="github-btn">
+                    <div class="github-btn__main">
+                        <div class="github-btn__icon">
+                            <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1"
+                                 width="14" height="16" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                      d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path>
+                            </svg>
+                        </div>
+                        <p class="github-btn__text">Star</p>
+                    </div>
+                    <p class="github-btn__num">21,038</p>
+                </button>
+            </li>
+            <li class="subheader__btns-item">
+                <button class="github-btn">
+                    <div class="github-btn__main">
+                        <div class="github-btn__icon">
+                            <svg class="octicon octicon-repo-forked v-align-text-bottom" viewBox="0 0 10 16" version="1.1"
+                                 width="10" height="16" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                      d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path>
+                            </svg>
+                        </div>
+                        <p class="github-btn__text">Fork</p>
+                    </div>
+                    <p class="github-btn__num">5,391</p>
+                </button>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="propositions">
+    <div class="container clearfix">
+        <h2 class="propositions__heading propositions__heading-decktop">&lt;Here is what you get&gt;</h2>
+
+        <div class="propositions__boxes">
+
+            <div class="propositions__box">
+                <div class="propositions__icon">
+                    <img src="./img/icon-search.png" alt=""></div>
+                <div class="propositions__contecst propositions__contecst-first">
+                    <h3 class="propositions__contecst-heading">Creatred to Make The Web Better</h3>
+                    <p class="propositions__contecst-description">Aenean cursus imperdiet nisl id fermentum. Curabitur dapibus iaculis mi gravida
+                        luctus. Sed id metus id quamauctor molestie eget ut augue.</p>
+                </div>
+            </div>
+            <div class="propositions__box">
+                <div class="propositions__icon"><img src="./img/icon-timer.png" alt=""></div>
+                <div class="propositions__contecst">
+                    <h3 class="propositions__contecst-heading">Incredibly Powerful Tool</h3>
+                    <p class="propositions__contecst-description">Maecenas eu dictum felis, a dignissim nibh. Maecenas eu dictum felis, a dignissim
+                        nibh. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat.</p>
+                </div>
+            </div>
+            <div class="propositions__box">
+                <div class="propositions__icon"><img src="./img/icon-colba.png" alt=""></div>
+                <div class="propositions__contecst">
+                    <h3 class="propositions__contecst-heading">Experimental Stuff</h3>
+                    <p class="propositions__contecst-description">Maecenas eu dictum felis, a dignissim nibh. Curabitur dapibus iaculis mi gravida
+                        luctus. Aliquam erat volutpat.</p>
+                </div>
+            </div>
+            <div class="propositions__box">
+                <div class="propositions__icon"><img src="./img/icon-clock.png" alt=""></div>
+                <div class="propositions__contecst">
+                    <h3 class="propositions__contecst-heading">Creatred to Make The Web Better</h3>
+                    <p class="propositions__contecst-description">Maecenas eu dictum felis, a dignissim nibh. Curabitur dapibus iaculis mi gravida
+                        luctus. Aliquam erat volutpat.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="propositions__img-block">
+            <img class="propositions__img " src="./img/editor.jpg" alt="">
+        </div>
+    </div>
+    </div>
+</section>
+
+<section class="reviews">
+    <div class="container">
+
+
+        <div class="slidershow-container">
+            <div class="mySlides fade">
+                <div class="mySlides__wraper">
+                    <div class="mySlides__item-img">
+                        <img src="./img/usirpic.png" alt=""></div>
+                    <div class="mySlides__item-testimonial">
+                        <div class="mySlides__item-name">Steven Strange</div>
+                        <div class="mySlides__item-post"><a href="#">@DoctorS</a></div>
+                    </div>
+                </div>
+                <div class="mySlides__item-text"><span class="mySlides__item-acsent">@Pixelbuddha</span> Suspendisse sodales sem est in, scelerisque
+                    felis scelerieque in. Aenean faucibus mollis risus. Praesent sit amet erat eget eros.
+                </div>
+                <div class="mySlides__item-time">2 hours ago</div>
+
+            </div>
+
+            <div class="mySlides fade">
+                <div class="mySlides__wraper">
+                    <div class="mySlides__item-img">
+                        <img src="./img/usirpic.png" alt=""></div>
+                    <div class="mySlides__item-testimonial">
+                        <div class="mySlides__item-name">Raule Socagen</div>
+                        <div class="mySlides__item-post"><a href="#">@UA/UX</a></div>
+                    </div>
+                </div>
+                <div class="mySlides__item-text"><span class="mySlides__item-acsent">@Pixelshmuddha</span> Suspendisse sodales sem est in, scelerisque
+                    felis scelerieque in.lorem Aenean faucibus mollis risus. Praesent sit amet erat eget eros. Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Possimus fugit porro voluptas placeat modi aliquid blanditiis, doloremque expedita odit suscipit repellat velit
+                    repellendus perspiciatis et officia ea eligendi perferendis provident.
+                </div>
+                <div class="mySlides__item-time">10 hours ago</div>
+
+
+            </div>
+            <div class="mySlides fade">
+                <div class="mySlides__wraper">
+                    <div class="mySlides__item-img">
+                        <img src="./img/usirpic.png" alt=""></div>
+                    <div class="mySlides__item-testimonial">
+                        <div class="mySlides__item-name">Paula Samerson</div>
+                        <div class="mySlides__item-post"><a href="#">@DoctorS</a></div>
+                    </div>
+                </div>
+                <div class="mySlides__item-text"><span class="mySlides__item-acsent">@Pixelabuddha</span> Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Suscipit ut odit necessitatibus. Vel soluta, sit ratione veniam culpa neque debitis facere molestias laboriosam,
+                    quia quis nulla, quae dignissimos, quasi assumenda.Suspendisse sodales sem est in, scelerisque felis scelerieque in. Aenean
+                    faucibus mollis risus. Praesent sit amet erat eget eros.
+                </div>
+                <div class="mySlides__item-time">5 hours ago</div>
+
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+            <a class="next" onclick="plusSlides(1)">&#10095</a>
+        </div>
+        <div class="social-btns">
+            <div class="social-item">
+                <a class="social-btn social-btn_github" href="#">
+                    <div class="fab fa-github"></div>
+                    GitHub</a>
+                <span class="social-item__details">7 352 Followers</span>
+            </div>
+            <div class="social-item">
+                <a class="social-btn social-btn_twitter " href="#">
+                    <div class="fab fa-twitter"></div>
+                    Twitter</a>
+                <span class="social-item__details">136 312 Followers</span>
+            </div>
+            <div class="social-item">
+                <a class="social-btn social-btn_facebook" href="#">
+                    <div class="fab fa-facebook-f"></div>
+                    Facebook</a>
+                <span class="social-item__details">218 092 Subscribers</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="clients-Co">
+    <div class="container">
+        <h2 class="clients-Co__title">People Are Talking About Fork</h2>
+        <div class="clients-Co__clients">
+            <div class="clients-Co__client">
+                <div class="clients-Co__client-logo"><img src="./img/fork1(1).png" alt="logo"></div>
+                <p class="clients-Co__client-review">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed
+                    varius urna et pulvinar venenatis.</p>
+            </div>
+            <div class="clients-Co__client">
+                <div class="clients-Co__client-logo"><img src="./img/fork1(2).png" alt="logo"></div>
+                <p class="clients-Co__client-review">Donec euismod dolor ut ultricies consequat. Vivamus urna ipsum, rhoncus molestie neque ac, mollis
+                    eleifend nibh.</p>
+            </div>
+            <div class="clients-Co__client">
+                <div class="clients-Co__client-logo"><img src="./img/fork1(3).png" alt="logo"></div>
+                <p class="clients-Co__client-review">In efficitur in velit et tempus. Duis nec odio dapibus, suscipit erat fringilla, imperdiet nibh.
+                    Morbi tempus auctor felis ac vehicula.</p>
+            </div>
+            <div class="clients-Co__client">
+                <div class="clients-Co__client-logo"><img src="./img/fork1(5)new.png" alt="logo"></div>
+                <p class="clients-Co__client-review">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed
+                    varius urna et pulvinar venenatis.</p>
+            </div>
+            <div class="clients-Co__client">
+                <div class="clients-Co__client-logo"><img src="./img/fork1(4).png" alt="logo"></div>
+                <p class="clients-Co__client-review">Praesent ut eros tristique, malesuada lectus vel, lobortis massa. Nulla faucibus lorem id arcu
+                    consequat faucibus.</p>
+            </div>
+            <div class="clients-Co__client">
+                <div class="clients-Co__client-logo"><img src="./img/fork1(6).png" alt="logo"></div>
+                <p class="clients-Co__client-review">Fusce pharetra erat id odio blandit, nec pharetra eros venenatis. Pellentesque porttitor cursus
+                    massa et vestibulum.</p>
+            </div>
+        </div>
+        <p class="clients-Co__footer">Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris, facilisis vitae aliquet id, imperdiet quis
+            nibh. Donec eget elit eu libero tincidunt
+            <br class="clients-Co__footer-br"> consequat nec elementum orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+            ridiculus mus.</p>
+        <hr class="clients-Co__line">
+    </div>
+</section>
+<!--section.pricing>div.container>h2.pricing__title+(div.pricing__packages>div.pricing__package*4>p.pricing__package-title+div.pricing__package-content>p.pricing__package-price{&#36;}>span.pricing__package-price_bold+^p.pricing__package-period{per month}+hr.pricing__package-line+ul.pricing__package-terms>(li.pricing__package-term*2)+^a.btn.btn_grey.pricing__purchase-btn{purchase})+p.pricing__footer-->
+<section class="pricing">
+    <div class="container">
+        <h2 class="pricing__title">Fork Subscription Pricing</h2>
+        <div class="pricing__packages">
+            <div class="pricing__package-wrapper">
+                <div class="pricing__package">
+                    <p class="pricing__package-title">Students</p>
+                    <div class="pricing__package-content">
+                        <p class="pricing__package-price">&#36;<span class="pricing__package-price_bold">29</span></p>
+                        <p class="pricing__package-period">per month</p>
+                        <hr class="pricing__package-line">
+                        <ul class="pricing__package-terms">
+                            <li class="pricing__package-term">Personal License</li>
+                            <li class="pricing__package-term">&nbsp;</li>
+                        </ul>
+                        <a href="" class="btn btn_grey pricing__purchase-btn">purchase</a></div>
+                </div>
+            </div>
+            <div class="pricing__package-wrapper">
+                <div class="pricing__package">
+                    <p class="pricing__package-title">professional</p>
+                    <div class="pricing__package-content">
+                        <p class="pricing__package-price">&#36;<span class="pricing__package-price_bold">59</span></p>
+                        <p class="pricing__package-period">per month</p>
+                        <hr class="pricing__package-line">
+                        <ul class="pricing__package-terms">
+                            <li class="pricing__package-term">Professional License</li>
+                            <li class="pricing__package-term">Email Support</li>
+                        </ul>
+                        <a href="" class="btn btn_grey pricing__purchase-btn">purchase</a></div>
+                </div>
+            </div>
+            <div class="pricing__package-wrapper pricing__package-wrapper_enlarge">
+                <div class="pricing__package pricing__package_enlarge">
+                    <p class="pricing__package-title pricing__package-title_enlarge">agency</p>
+                    <div class="pricing__package-content pricing__package-content_enlarge">
+                        <p class="pricing__package-price pricing__package-price_enlarge">&#36;<span class="pricing__package-price_bold">99</span></p>
+                        <p class="pricing__package-period pricing__package-period_enlarge">per month</p>
+                        <hr class="pricing__package-line pricing__package-line_enlarge">
+                        <ul class="pricing__package-terms pricing__package-terms_enlarge">
+                            <li class="pricing__package-term pricing__package-term_enlarge">1-12 Team Members</li>
+                            <li class="pricing__package-term pricing__package-term_enlarge">Phone Support</li>
+                        </ul>
+                        <a href="" class="btn btn_grey pricing__purchase-btn pricing__purchase-btn_enlarge">purchase</a></div>
+                </div>
+            </div>
+            <div class="pricing__package-wrapper">
+                <div class="pricing__package">
+                    <p class="pricing__package-title">enterprise</p>
+                    <div class="pricing__package-content">
+                        <p class="pricing__package-price">&#36;<span class="pricing__package-price_bold">159</span></p>
+                        <p class="pricing__package-period">per month</p>
+                        <hr class="pricing__package-line">
+                        <ul class="pricing__package-terms">
+                            <li class="pricing__package-term">Unlimited Team Members</li>
+                            <li class="pricing__package-term">24&#47;7 Phone Support</li>
+                        </ul>
+                        <a href="" class="btn btn_grey pricing__purchase-btn">purchase</a></div>
+                </div>
+            </div>
+        </div>
+        <p class="pricing__footer"></p>
+    </div>
+</section>
+
+<section class="callback">
+    <div class="container callback__flex-wraper">
+        <h2 class="callback__heading">Order callback</h2>
+
+        <form class="form">
+            <div class="form__inputs">
+                <input type="email" id="email" name="email" placeholder="Your name" class="input form__input">
+                <input type="phone" id="phone" name="phone" placeholder="Your Phone" class="input form__input">
+            </div>
+            <button type="submit" class="btn btn_pink form__btn-submit">call me!</button>
+        </form>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__flex-blok">
+            <div class="logo-box footer__logo-box">
+                <a href="" class="logo logo-box__logo">
+                    <div class="logo__img logo-box__logo-img">
+                        <!--<img src="./img/Logo-main.png" alt="">--></div>
+                    <span class="logo__title logo-box__logo-title">FORK<span class="logo-box__second-logo-part">IO</span></span>
+                </a>
+
+                <p class="logo-box__text">Lorem ipsum dolor sit amet, feugiat delicat liberavisse id cum no quo.</p>
+            </div>
+
+
+            <div class="footer-nav footer__footer-nav">
+                <div class="footer-nav__header">Navigation</div>
+                <div class="footer-nav__links">
+                    <a class="link link_color link_size" href="#">Home</a>
+                    <a class="link link_color link_size" href="#">Overview</a>
+                    <a class="link link_color link_size" href="#">About</a>
+                    <a class="link link_color link_size" href="#">Buying Options</a>
+                    <a class="link link_color link_size" href="#">Support</a>
+                </div>
+            </div>
+
+            <div class="contacts footer__contacts">
+                <p class="contacts__phone-number">347 567 78 90</p>
+                <p class="contacts__text">AVAILABLE FROM 12PM - 18PM</p>
+                <p class="contacts__header">New York, NY</p>
+                <p class="contacts__address">560 Judah St &amp; 15th Ave, Apt 5<br>
+                    San Francisco, CA, 230903</p>
+            </div>
+
+
+            <div class="footer__info">
+                <div class="footer__info-header">Info</div>
+                <div class="footer__info-text">Wisi enim ad minim veniam_ quis nostrud exerci tation uliamcorper suscipit lobortis nisl ut aliquip ex
+                    commodo consequat. Autern vel hendrerit iriure dolor in hendrerit.
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="bundle.js"></script>
+
 </body>
+
 </html>

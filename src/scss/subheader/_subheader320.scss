@@ -1,0 +1,27 @@
+.subheader {
+  padding-top: 121px;
+  padding-bottom: 88px;
+  text-align: center;
+  &__title {
+    margin-bottom: 14px;
+    @include title(30px, #635c73, 700, uppercase);
+    line-height: 1.5;
+  }
+  &__slogan {
+    margin-bottom: 10px;
+    font-family: Lato, sans-serif;
+    color: $text-color-three;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  &__btns {
+    @include flex-center;
+    flex-wrap: wrap;
+    &-item {
+      margin-right: 10px;
+      color: #24292e;
+    }
+  }
+}
+
+@include github-btn (".github-btn");

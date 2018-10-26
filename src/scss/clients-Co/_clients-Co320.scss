@@ -1,0 +1,39 @@
+.clients-Co {
+  padding-top: 61px;
+  background: url(../img/fork-bg.jpg) top center no-repeat #4b3b4e;
+  text-align: center;
+  &__title {
+    margin-bottom: 40px;
+    @include title(36px, #fff);
+    line-height: 1.4;
+  }
+  &__clients {
+    @include flex-space;
+    flex-direction: column;
+  }
+  &__client {
+    margin-bottom: 40px;
+    width: 248px;
+    &-logo {
+      margin-bottom: 32px;
+    }
+    &-review {
+      font-family: Lato, sans-serif;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      font-style: italic;
+      line-height: 24px;
+    }
+  }
+  &__footer {
+    display: none;
+  }
+  &__line {
+    margin: 0 auto;
+    width: 87.5vw;
+    height: 2px;
+    background: #645766;
+    border: none;
+  }
+}
