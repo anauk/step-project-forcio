@@ -44,8 +44,9 @@ body {
     background-color: $bcg-color-accent;
     text-transform: capitalize;
     font-weight: 700;
+    border: 1px solid $bcg-color-accent;
     &:hover {
-      border: 1px solid $text-color-one;
+      border: $text-color-one;
       color: $text-color-one;
       background-color: #fff;
     }
