@@ -46,7 +46,7 @@ body {
     font-weight: 700;
     border: 1px solid $bcg-color-accent;
     &:hover {
-      border: $text-color-one;
+      border: 1px solid $text-color-one;
       color: $text-color-one;
       background-color: #fff;
     }
