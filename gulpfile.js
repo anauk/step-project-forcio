@@ -34,16 +34,6 @@ gulp.task('lint', function() {
 });
 
 
-gulp.task('img', function(){
-    return gulp.src('./src/img/*')
-        .pipe(imagemin({
-            interlaced: true,
-            progressive: true,
-            svgoPlugins: [{removeViewBox: false}]
-        }))
-        .pipe(gulp.dest('./build/img'))
-})
-
 gulp.task('minify', function(){
     return gulp.src('./src/js/*.js')
         .pipe(concat('bundle.js'))
@@ -59,7 +49,7 @@ gulp.task('clean', function(){
         .pipe(clean())
 })
 
-gulp.task('serve', function (){
+gulp.task('dev', function (){
     browserSync.init({
         server: "./build/"
     })
@@ -72,6 +62,10 @@ gulp.task('serve', function (){
     });
     gulp.watch('./src/index.html').on('change', browserSync.reload);
 
+})
+
+gulp.task('html', function(){
+    gulp.src('./src/index.html').pipe(gulp.dest('./build/'));
 })
 
 gulp.task('sass', function(){
@@ -103,13 +97,10 @@ gulp.task('img', function(){
 
 gulp.task('build', function() {
     runSequence('clean',
-        ['lint', 'img', 'sass', 'minify'],
-        'serve');
+        ['lint', 'img', 'sass', 'minify', 'html']
+        );
 });
-
-
-
 
 gulp.task('default', ['build'], function(){
     console.log('=== ALL DONE ===')
-})
+});
