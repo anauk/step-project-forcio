@@ -3,6 +3,7 @@
     color: $text-color-one;
     &-title {
       display: inline-block;
+      font-weight: bold;
     }
     &:hover .logo__title{
       color: #fff;
