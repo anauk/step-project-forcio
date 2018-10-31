@@ -1,7 +1,6 @@
 'use strict';
 
 var gulp = require('gulp');
-var minify = require('gulp-uglify');
 var browserSync = require('browser-sync').create();
 var sass = require('gulp-sass');
 var clean = require('gulp-clean');
@@ -10,7 +9,7 @@ var rename = require('gulp-rename');
 var imagemin = require('gulp-imagemin');
 var eslint = require('gulp-eslint');
 var sourcemaps = require('gulp-sourcemaps');
-var jsminify = require('gulp-js-minify');
+var jsminify = require('gulp-terser');
 var autoprefixer = require('gulp-autoprefixer');
 var cleanCSS = require('gulp-clean-css');
 var runSequence = require('run-sequence');
