@@ -1,5 +1,5 @@
 //navbar links: scrolling to anchors
-
+import $ from 'jquery';
 $(function () {
     function slowScroll (e) {
         let anchor = $(this);

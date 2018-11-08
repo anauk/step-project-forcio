@@ -1,11 +1,11 @@
- function Slider(){
+function Slider() {
     this.slideIndex = 1;
-     let self = this;
+    let self = this;
     /*this.showSlides(slideIndex);*/
 
     this.plusSlides = function (n) {
-        this.showSlides(self.slideIndex += n);
-    }
+        self.showSlides(self.slideIndex += n);
+    };
 
     this.showSlides = function (n) {
 
@@ -24,6 +24,11 @@
 
         slides[self.slideIndex - 1].style.display = "block";
     }
+
 }
+
 let slider = new Slider();
 slider.showSlides();
+
+document.getElementById('sliderButtonLeft').addEventListener('click', function() {return slider.plusSlides(-1)});
+document.getElementById('sliderButtonRight').addEventListener('click', function() {return slider.plusSlides(1)});
